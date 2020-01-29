@@ -1,0 +1,23 @@
+{
+  "name": "perfected",
+  "version": "1.0.0",
+  "description": "# CEGLIE Thomas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berrichinawel/perfected.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berrichinawel/perfected/issues"
+  },
+  "homepage": "https://github.com/berrichinawel/perfected#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
