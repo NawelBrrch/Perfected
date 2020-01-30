@@ -1,27 +1,34 @@
 @font-face {
-  font-family: "product_sans_regular";
-  src: url("../../../assets/fonts/product_sans/ProductSans-Regular.ttf");
+  font-family: "montserrat_bold";
+  src: url("../fonts/montserrat-bold.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "product_sans_bold";
-  src: url("../../../assets/fonts/product_sans/ProductSans-Bold.ttf");
+  font-family: "montserrat_semibold";
+  src: url("../fonts/montserrat-semiBold.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "product_sans_italic";
-  src: url("../../../assets/fonts/product_sans/ProductSans-Regular-Italic.ttf");
+  font-family: "poppins_light";
+  src: url("../fonts/poppins-light.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "product_sans_bold_italic";
-  src: url("../../../assets/fonts/product_sans/ProductSans-Bold-Italic.ttf");
+  font-family: "poppins_medium";
+  src: url("../fonts/poppins-medium.ttf");
   font-weight: normal;
   font-style: normal;
 }
+
+// FONTS VARIABLES
+
+$h1-font: "montserrat_bold";
+$h2-font: "montserrat_semibold";
+$h3-font: "poppins_medium";
+$text-font: "poppins_light";

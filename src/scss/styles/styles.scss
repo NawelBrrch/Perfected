@@ -1,10 +1,19 @@
-@import "navbar";
-@import "header";
-@import "menu";
-@import "custom";
-@import "custom_page";
-@import "carousel";
-@import "values";
-@import "tissues";
-@import "artist";
-@import "footer";
+// BLOCS
+
+@import "../styles/blocs/navbar.scss";
+@import "../styles/blocs/header.scss";
+@import "../styles/blocs/menu.scss";
+@import "../styles/blocs/custom.scss";
+@import "../styles/blocs/custom_page.scss";
+@import "../styles/blocs/carousel.scss";
+@import "../styles/blocs/values.scss";
+@import "../styles/blocs/tissues.scss";
+@import "../styles/blocs/artist.scss";
+@import "../styles/blocs/footer.scss";
+
+// CONFIG
+
+@import "../styles/config/colors.scss";
+@import "../styles/config/fonts.scss";
+@import "../styles/config/global.scss";
+@import "../styles/config/mixins.scss";
