@@ -1,12 +1,17 @@
 // VARIABLES COLORS
 
 $background-color: #f3f3f3;
+$brand-background-color: #ececec;
 
 //GLOBALS SETTINGS
 
+body {
+  background-color: $background-color;
+}
+
 h1 {
   font-family: $h1-font;
-  font-size: 2em;
+  font-size: 1.4em;
 
   @include desktop {
     font-size: 3.5em;
@@ -24,7 +29,7 @@ h2 {
 
 h3 {
   font-family: $h3-font;
-  font-size: 1em;
+  font-size: 0.9em;
 
   @include desktop {
     font-size: 2em;
@@ -51,7 +56,7 @@ p {
 
 .cta {
   font-family: $cta-font;
-  font-size: 0.8em;
+  font-size: 0.63em;
 
   @include desktop {
     font-size: 1.5em;
