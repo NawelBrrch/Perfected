@@ -1,23 +1,21 @@
-header {
-  overflow: hidden;
-}
-
 .header__text {
   background-image: url("../../assets/perf-hero.png");
   margin-top: 0vh;
   background-size: auto 100%;
-  background-position: -45%;
+  background-position: -53%;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  width: 100vw;
-  height: 100vh;
-
   display: flex;
-  top: 3vh;
   flex-direction: column;
   left: 3vw;
+
+  @include desktop {
+    background-image: url("../../assets/perf-danaerys.png");
+    margin-top: 4vh;
+    background-position: 125%;
+  }
 }
 
 .header__logo {
@@ -26,52 +24,89 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 17vw;
-}
 
-.header__bg {
-  background-image: url("../../assets/perf-hero.png");
-  background-size: auto 100%;
-  background-position: -100%;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  z-index: -2;
+  @include desktop {
+    display: none;
+  }
 }
 
 .header__text {
-  border: solid 1px;
   padding-left: 4vw;
   z-index: 1;
 
+  @include desktop {
+    padding-left: 10vw;
+  }
+
   h1 {
-    padding-top: 2vh;
+    margin-top: 3vh;
     padding-bottom: 3vh;
     width: 72vw;
     line-height: 1.5;
     letter-spacing: -0.5px;
+
+    @include desktop {
+      margin-top: 13vh;
+      line-height: 1;
+      width: 54vw;
+    }
   }
   h3 {
     padding-top: 3vh;
     padding-bottom: 3vh;
-    width: 60vw;
+    width: 55vw;
     line-height: 1.7;
+
+    @include desktop {
+      width: 43vw;
+      line-height: 1.5;
+      letter-spacing: 1px;
+    }
   }
-  .cta {
+  .header__cta {
     margin-top: 3vh;
     border: solid 1px black;
     padding: 4vw;
     display: inline-block;
     width: 31vw;
+
+    @include desktop {
+      margin-top: 4vh;
+      padding: 2vw 5vw;
+      width: 19vw;
+    }
   }
 }
 
-.header__verticalBrand {
+.header__backgroundBrand {
   position: absolute;
   top: 23vh;
   left: -95vw;
   transform: rotate(-90deg);
-  font-family: $menu-font;
+  font-family: $brand-font;
   color: $brand-background-color;
   font-size: 10em;
   z-index: -1;
+
+  @include desktop {
+    transform: rotate(0deg);
+    top: 35vh;
+    left: -3vw;
+    font-size: 24em;
+    width: 1260px;
+    overflow: hidden;
+  }
+}
+
+.header__container {
+  display: none;
+
+  @include desktop {
+    font-family: $p-font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 22vw;
+    margin-top: 20vh;
+  }
 }
