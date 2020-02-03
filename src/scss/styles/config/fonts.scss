@@ -39,6 +39,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 // FONTS VARIABLES
 
@@ -46,7 +52,8 @@ $h1-font: "WorkSans-Bold";
 $h2-font: "Raleway-Medium";
 $h3-font: "Raleway-Regular";
 $cta-font: "Raleway-Regular";
-$p-font: "Raleway-regular";
+$title-card: "Raleway-Bold";
+$p-font: "Raleway-Medium";
 $p-card-font: "Raleway-Italic";
 $brand-font: "ProductSans-Bold";
 $menu-font: "Raleway-SemiBold";
