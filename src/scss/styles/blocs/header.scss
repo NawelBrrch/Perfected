@@ -1,34 +1,78 @@
 header {
-  background-color: $background-color;
+  //background-color: $background-color;
   overflow: hidden;
 }
 
 .header__text {
-  position: absolute;
+  background-image: url("../../assets/perf-hero.png");
+  margin-top: 0vh;
+  background-size: auto 100%;
+  background-position: -45%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
   top: 3vh;
+  flex-direction: column;
   left: 3vw;
-  z-index: 1;
 }
 
 .header__logo {
+  margin-top: 4vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 13vw;
-  height: 8vh;
-}
-
-.header__brand {
-  text-align: center;
+  width: 17vw;
 }
 
 .header__bg {
   background-image: url("../../assets/perf-hero.png");
-  margin-top: 0vh;
   background-size: auto 100%;
-  background-position: -370%;
+  background-position: -100%;
   background-repeat: no-repeat;
-  width: 80vh;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+.header__text {
+  border: solid 1px;
+  padding-left: 4vw;
+  z-index: 1;
+
+  h1 {
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    width: 72vw;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+  }
+  h3 {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    width: 60vw;
+    line-height: 1.7;
+  }
+  .cta {
+    margin-top: 3vh;
+    border: solid 1px black;
+    padding: 4vw;
+    display: inline-block;
+    width: 31vw;
+  }
+}
+
+.header__verticalBrand {
+  position: absolute;
+  top: 23vh;
+  left: -95vw;
+  transform: rotate(-90deg);
+  font-family: $menu-font;
+  color: $brand-background-color;
+  font-size: 10em;
   z-index: -1;
 }
