@@ -1,0 +1,34 @@
+header {
+  background-color: $background-color;
+  overflow: hidden;
+}
+
+.header__text {
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+  z-index: 1;
+}
+
+.header__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13vw;
+  height: 8vh;
+}
+
+.header__brand {
+  text-align: center;
+}
+
+.header__bg {
+  background-image: url("../../assets/perf-hero.png");
+  margin-top: 0vh;
+  background-size: auto 100%;
+  background-position: -370%;
+  background-repeat: no-repeat;
+  width: 80vh;
+  height: 90vh;
+  z-index: -1;
+}

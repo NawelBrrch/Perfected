@@ -1,38 +1,76 @@
+// VARIABLES COLORS
+
+$background-color: #f3f3f3;
+
+//GLOBALS SETTINGS
+
 h1 {
   font-family: $h1-font;
-  font-size: 3.5em;
+  font-size: 2em;
+
+  @include desktop {
+    font-size: 3.5em;
+  }
 }
 
 h2 {
   font-family: $h2-font;
-  font-size: 2.5em;
+  font-size: 1.5em;
+
+  @include desktop {
+    font-size: 2.5em;
+  }
 }
 
 h3 {
   font-family: $h3-font;
-  font-size: 2em;
+  font-size: 1em;
+
+  @include desktop {
+    font-size: 2em;
+  }
 }
 
 p {
   font-family: $p-font;
-  font-size: 1.5em;
+  font-size: 0.8em;
+
+  @include desktop {
+    font-size: 1.5em;
+  }
 }
 
-.brand {
+.header__brand {
   font-family: $brand-font;
-  font-size: 2.2em;
+  font-size: 2em;
+
+  @include desktop {
+    font-size: 2.2em;
+  }
 }
 
 .cta {
   font-family: $cta-font;
-  font-size: 1.5em;
+  font-size: 0.8em;
+
+  @include desktop {
+    font-size: 1.5em;
+  }
 }
 
 .menu {
   font-family: $menu-font;
-  font-size: 0.9em;
+  font-size: 0.5em;
+
+  @include desktop {
+    font-size: 0.9em;
+  }
 }
 .p-card {
   font-family: $p-card-font;
-  font-size: 1.5em;
+  font-size: 0.8em;
+
+  @include desktop {
+    font-size: 1.5em;
+  }
 }
