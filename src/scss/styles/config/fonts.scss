@@ -6,22 +6,36 @@
 }
 
 @font-face {
-  font-family: "WorkSans-SemiBold";
-  src: url("../fonts/WorkSans-SemiBold.ttf");
+  font-family: "ProductSans-Bold";
+  src: url("../fonts/ProductSans-Bold.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "WorkSans-Medium";
-  src: url("../fonts/WorkSans-Medium.ttf");
+  font-family: "Raleway-Medium";
+  src: url("../fonts/Raleway-Medium.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "WorkSans-Regular";
-  src: url("../fonts/WorkSans-Regular.ttf");
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-Italic";
+  src: url("../fonts/Raleway-Italic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("../fonts/Raleway-SemiBold.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -29,6 +43,10 @@
 // FONTS VARIABLES
 
 $h1-font: "WorkSans-Bold";
-$h2-font: "WorkSans-SemiBold";
-$h3-font: "WorkSans-Medium";
-$text-font: "WorkSans-Regular";
+$h2-font: "Raleway-Medium";
+$h3-font: "Raleway-Regular";
+$cta-font: "Raleway-Regular";
+$p-font: "Raleway-regular";
+$p-card-font: "Raleway-Italic";
+$brand-font: "ProductSans-Bold";
+$menu-font: "Raleway-SemiBold";

@@ -14,21 +14,25 @@ h3 {
 }
 
 p {
-  font-family: $text-font;
+  font-family: $p-font;
   font-size: 1.5em;
 }
 
 .brand {
-  font-family: $h1-font;
+  font-family: $brand-font;
   font-size: 2.2em;
 }
 
 .cta {
-  font-family: $text-font;
+  font-family: $cta-font;
   font-size: 1.5em;
 }
 
 .menu {
-  font-family: $text-font;
+  font-family: $menu-font;
   font-size: 0.9em;
+}
+.p-card {
+  font-family: $p-card-font;
+  font-size: 1.5em;
 }
