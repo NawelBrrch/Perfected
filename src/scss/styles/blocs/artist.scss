@@ -1,0 +1,51 @@
+.artist {
+  .artist__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10%;
+
+    h2 {
+      text-transform: uppercase;
+      padding-bottom: 10%;
+
+      em {
+        color: #bc6907;
+      }
+    }
+
+    p {
+      line-height: 150%;
+      padding-bottom: 10%;
+    }
+
+    button {
+      background-color: transparent;
+      width: 70%;
+      padding: 6px 11px;
+    }
+  }
+
+  .artist__pictures {
+    background-color: black;
+
+    .artist__murciano {
+      width: 100vw;
+      height: 30vw;
+      object-fit: cover;
+    }
+
+    .artist__paintings {
+      height: 30vw;
+      display: flex;
+    }
+
+    .artist__painting {
+      width: 33.33vw;
+      margin: 0;
+      padding: 0;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}
