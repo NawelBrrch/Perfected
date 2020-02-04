@@ -4,21 +4,26 @@ $background-color: #f3f3f3;
 $brand-background-color: #ececec;
 
 //GLOBALS SETTINGS
-
+//1em = 16px;
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: $background-color;
+  font-size: 11px;
+
+  @include medium {
+    font-size: 20px;
+  }
 }
 
 h1 {
   font-family: $h1-font;
-  font-size: 1.4em;
+  font-size: 2em;
 
   @include medium {
-    font-size: 3.5em;
+    font-size: 2.8em;
   }
 }
 
@@ -27,25 +32,25 @@ h2 {
   font-size: 1.5em;
 
   @include medium {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
 h3 {
   font-family: $h3-font;
-  font-size: 0.9em;
+  font-size: 1.2em;
 
   @include medium {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 }
 
 p {
   font-family: $p-font;
-  font-size: 0.8em;
+  font-size: 1em;
 
   @include medium {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
@@ -60,13 +65,13 @@ p {
 
 .cta {
   font-family: $cta-font;
-  font-size: 0.63em;
+  font-size: 0.9em;
   text-transform: uppercase;
-  padding: 15px 17px;
+  padding: 8px 15px;
   border: 1px solid #2f2f2f;
 
   @include medium {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 

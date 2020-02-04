@@ -22,7 +22,7 @@
     .jacket__man {
       display: none;
 
-      @include desktop {
+      @include medium {
         display: block;
       }
     }

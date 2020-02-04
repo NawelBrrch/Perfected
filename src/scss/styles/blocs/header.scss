@@ -1,112 +1,50 @@
-.header__text {
-  background-image: url("../../assets/perf-hero.png");
-  margin-top: 0vh;
-  background-size: auto 100%;
-  background-position: right;
-  background-repeat: no-repeat;
-  width: 100vw;
+header {
   height: 100vh;
-  z-index: -1;
   display: flex;
   flex-direction: column;
-  left: 3vw;
+  background: url("../../assets/perf-hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 
-  @include medium {
-    background-image: url("../../assets/perf-danaerys.png");
-    margin-top: 4vh;
-    background-position: right;
+  img {
+    max-width: 13%;
+    align-self: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
   }
-}
-
-.header__logo {
-  margin-top: 4vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 17vw;
-
-  @include medium {
-    display: none;
-  }
-}
-
-.header__text {
-  padding-left: 4vw;
-  z-index: 1;
-
-  @include medium {
-    padding-left: 10vw;
-  }
-
-  h1 {
-    margin-top: 3vh;
-    padding-bottom: 3vh;
-    width: 72vw;
-    line-height: 1.5;
-    letter-spacing: -0.5px;
-
-    @include medium {
-      margin-top: 13vh;
-      line-height: 1;
-      width: 54vw;
-    }
-  }
-  h3 {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    width: 55vw;
-    line-height: 1.7;
-
-    @include medium {
-      width: 43vw;
-      line-height: 1.5;
-      letter-spacing: 1px;
-    }
-  }
-  .header__cta {
-    margin-top: 3vh;
-    border: solid 1px black;
-    padding: 4vw;
-    display: inline-block;
-    width: 31vw;
-
-    @include medium {
-      margin-top: 4vh;
-      padding: 2vw 5vw;
-      width: 23vw;
-    }
-  }
-}
-
-.header__backgroundBrand {
-  position: absolute;
-  top: 23vh;
-  left: -95vw;
-  transform: rotate(-90deg);
-  font-family: $brand-font;
-  color: $brand-background-color;
-  font-size: 10em;
-  z-index: -1;
-
-  @include medium {
-    transform: rotate(0deg);
-    top: 35vh;
-    left: -3vw;
-    font-size: 24em;
-    width: 1260px;
-    overflow: hidden;
-  }
-}
-
-.header__container {
-  display: none;
-
-  @include medium {
-    font-family: $p-font;
+  .header__text {
+    padding-left: 10%;
+    width: 84%;
+    height: 43%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: 30vw;
-    margin-top: 20vh;
+    justify-content: space-between;
+
+    h1 {
+      line-height: 150%;
+    }
+
+    h3 {
+      line-height: 140%;
+      width: 70%;
+    }
+
+    button {
+      // width: 55%;
+      background-color: transparent;
+    }
   }
+}
+
+.background__text {
+  font-size: 13.6em;
+  font-weight: 600;
+  color: $brand-background-color;
+  transform: rotate(-90deg);
+  z-index: -1;
+  position: absolute;
+  left: -240px;
+  top: 200px;
+  overflow: hidden;
 }
