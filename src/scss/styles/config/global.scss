@@ -23,15 +23,23 @@ h1 {
   font-size: 2em;
 
   @include medium {
+    font-size: 2.2em;
+  }
+
+  @include desktop {
     font-size: 2.8em;
   }
 }
 
 h2 {
   font-family: $h2-font;
-  font-size: 1.5em;
+  font-size: 1.45em;
 
   @include medium {
+    font-size: 1.6em;
+  }
+
+  @include desktop {
     font-size: 2em;
   }
 }
@@ -41,6 +49,10 @@ h3 {
   font-size: 1.2em;
 
   @include medium {
+    font-size: 1.4em;
+  }
+
+  @include desktop {
     font-size: 1.6em;
   }
 }
@@ -50,7 +62,7 @@ p {
   font-size: 1em;
 
   @include medium {
-    font-size: 1em;
+    font-size: 0.7em;
   }
 }
 
@@ -71,7 +83,13 @@ p {
   border: 1px solid #2f2f2f;
 
   @include medium {
+    font-size: 0.8em;
+    padding: 14px 45px;
+  }
+
+  @include desktop {
     font-size: 1.2em;
+    padding: 21px 75px;
   }
 }
 
