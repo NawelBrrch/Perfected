@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/a2cd0917f3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/script.js"></script>
     <link rel="stylesheet" href="../src/scss/styles/styles.scss" />
     <title>Document</title>
   </head>
@@ -121,11 +122,14 @@
       </div>
       <button class="cta">Personnalisez votre perfecto</button>
     </section>
-        <section class="tissues">
-      <div class="tissues__choice">
+
+
+    <section class="fabrics">
+      <div class="fabrics__choice">
+
         <h2>Nos tissus choisis avec soin</h2>
 
-        <div class="tissues is-checked">
+        <div class="fabric is-checked">
           <h3>Cuir d’eucalyptus</h3>
           <p>
             Il offre une résistance et une longévité extrême aux produits.
@@ -133,14 +137,14 @@
             quantités d'eau ou d'énergie pour être cultivée.
           </p>
         </div>
-        <div class="tissues">
+        <div class="fabric">
           <h3>La laine de chanvre</h3>
           <p>
             En plus d’être une matière écologique et locale de choix, c’est
             aussi la fibre végétale la plus robuste, et thermorégulatrice.
           </p>
         </div>
-        <div class="tissues">
+        <div class="fabric">
           <h3>Le Lyocell</h3>
           <p>
             C’est une fibre synthétique artificielle biodégradable fabriquée à
@@ -150,31 +154,47 @@
         </div>
       </div>
 
-      <div class="tissues__container">
-        <div class="tissues__container__radio">
-          <div class="tissues__radioButton">
-            <input
-              type="radio"
-              id="lether"
-              name="tissues"
-              value="lether"
-              checked
-            />
-            <label for="lether"></label>
-          </div>
-
-          <div class="tissues__radioButton">
-            <input type="radio" id="wool" name="tissues" value="wool" />
-            <label for="wool"></label>
-          </div>
-          <div class="tissues__radioButton">
-            <input type="radio" id="lyocell" name="tissues" value="lyocell" />
-            <label for="lyocell"></label>
-          </div>
+      <div class="fabric__container">
+        <div class="fabric__radio">
+          <input
+            type="radio"
+            id="lether"
+            name="fabric"
+            value="lether"
+            checked
+          />
+          <label for="lether"></label>
+          <input type="radio" id="wool" name="fabric" value="wool" />
+          <label for="wool"></label>
+          <input type="radio" id="lyocell" name="fabric" value="lyocell" />
+          <label for="lyocell"></label>
         </div>
-        <img class="tissues__image" src="assets/tissues.png" />
+
+        <div class="fabric__image">
+          <img
+            class="fabric__image__lether"
+            src="assets/fabric1.png"
+            alt="lether"
+          />
+          <img
+            class="fabric__image__wool"
+            src="assets/fabric2.png"
+            alt="wool"
+          />
+          <img
+            class="fabric__image__lyocell"
+            src="assets/fabric3.png"
+            alt="lyocell"
+          />
+          <img
+            class="fabric__image__shadow"
+            src="assets/fabric4.png"
+            alt="shadow"
+          />
+        </div>
       </div>
-      <div class="tissues__background"><p>Tissus</p></div>
+
+      <div class="fabric__background"><p>Tissus</p></div>
     </section>
     <section class="collection">
         <h2 class="collection__title">Nos Creations</h2>
