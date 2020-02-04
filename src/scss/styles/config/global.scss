@@ -2,16 +2,17 @@
 
 $background-color: #f3f3f3;
 $brand-background-color: #ececec;
+$primary-color-black: #2f2f2f;
 
 //GLOBALS SETTINGS
-//1em = 16px;
+//1em = 14px;
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: $background-color;
-  font-size: 11px;
+  font-size: 14px;
 
   @include medium {
     font-size: 20px;
@@ -21,6 +22,7 @@ body {
 h1 {
   font-family: $h1-font;
   font-size: 2em;
+  color: $primary-color-black;
 
   @include medium {
     font-size: 2.2em;
@@ -34,6 +36,7 @@ h1 {
 h2 {
   font-family: $h2-font;
   font-size: 1.45em;
+  color: $primary-color-black;
 
   @include medium {
     font-size: 1.6em;
@@ -47,6 +50,7 @@ h2 {
 h3 {
   font-family: $h3-font;
   font-size: 1.2em;
+  color: $primary-color-black;
 
   @include medium {
     font-size: 1.4em;
@@ -60,6 +64,7 @@ h3 {
 p {
   font-family: $p-font;
   font-size: 1em;
+  color: $primary-color-black;
 
   @include medium {
     font-size: 0.7em;
@@ -81,9 +86,10 @@ p {
   text-transform: uppercase;
   padding: 8px 15px;
   border: 1px solid #2f2f2f;
+  color: $primary-color-black;
 
   @include medium {
-    font-size: 0.8em;
+    font-size: 24px;
     padding: 14px 45px;
   }
 
@@ -98,6 +104,7 @@ p {
 .menu {
   font-family: $menu-font;
   font-size: 0.5em;
+  color: $primary-color-black;
 
   @include medium {
     font-size: 0.9em;

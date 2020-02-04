@@ -1,5 +1,7 @@
 header {
   height: 100vh;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   background: url("../../assets/perf-hero.png");
@@ -11,35 +13,37 @@ header {
     background: url("../../assets/perf-danaerys.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 400px bottom;
+    background-position: right -300px bottom;
   }
 
   @include desktop {
-    background-position: 500px bottom;
+    background-position: right -150px bottom;
   }
 
-  img {
+  .header__logo {
     max-width: 13%;
     align-self: center;
-    padding-top: 7%;
-    padding-bottom: 5%;
+    padding: 7% 0 7% 0;
 
     @include medium {
       display: none;
     }
   }
   .header__text {
-    padding-left: 10%;
-    width: 84%;
-    height: 43%;
+    padding: 0 10%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    @include big-phone {
+      justify-content: space-around;
+    }
+
     @include medium {
       width: 80%;
       height: 70vh;
-      justify-content: space-between;
+      justify-content: space-around;
       margin-top: 10%;
     }
 
@@ -49,20 +53,32 @@ header {
     }
 
     h1 {
-      line-height: 150%;
+      line-height: 130%;
+      width: 70%;
+
+      @include big-phone {
+        line-height: 160%;
+        font-size: 30px;
+      }
 
       @include medium {
-        line-height: 66px;
+        line-height: 130%;
+        width: 100%;
       }
     }
 
     h3 {
-      line-height: 140%;
-      width: 70%;
+      line-height: 130%;
+      width: 50%;
+
+      @include big-phone {
+        line-height: 160%;
+        font-size: 20px;
+      }
 
       @include medium {
         width: 90%;
-        line-height: 150%;
+        line-height: 130%;
       }
 
       @include desktop {
@@ -71,8 +87,19 @@ header {
     }
 
     button {
-      // width: 55%;
-      background-color: transparent;
+      width: 100%;
+      font-size: 15px;
+      padding: 15px 0;
+      background-color: #f3f3f3;
+      color: black;
+
+      @include medium {
+        background-color: transparent;
+        color: black;
+        padding: 14px 20px;
+        width: 65%;
+        font-size: 24px;
+      }
     }
   }
   .scroll-indication {
@@ -80,9 +107,16 @@ header {
 
     @include medium {
       display: flex;
-      justify-content: center;
-      margin-top: 5%;
+      align-items: center;
+      margin: 5% 0 2% 0;
+      flex-direction: column;
+      height: 5%;
+      justify-content: space-between;
     }
+  }
+
+  .arrow__scroll {
+    width: 16px;
   }
 }
 
@@ -93,12 +127,11 @@ header {
   transform: rotate(-90deg);
   z-index: -1;
   position: absolute;
-  left: -240px;
+  left: -400px;
   top: 150px;
-  overflow: hidden;
-  display: none;
+
   @include medium {
     transform: rotate(0deg);
-    display: none;
+    left: 0;
   }
 }
