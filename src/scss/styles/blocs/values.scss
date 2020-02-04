@@ -1,0 +1,141 @@
+.values {
+  margin-top: 2.5vw;
+  height: 575px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @include desktop {
+    flex-direction: row;
+    width: 95vw;
+    height: 100vh;
+    margin-left: 2.5vw;
+    margin-top: 2.5vw;
+  }
+  @include desktop {
+    h2 {
+      position: absolute;
+      margin-top: -40vh;
+    }
+  }
+
+  &__value {
+    height: 150px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include desktop {
+      width: 35%;
+      height: 70%;
+      margin-left: 10px;
+      filter: grayscale(1);
+
+      &:hover {
+        position: relative;
+        filter: none;
+
+        .values__description {
+          opacity: 1;
+          text-shadow: 0 0 5px #000000;
+        }
+      }
+    }
+  }
+
+  &__pic {
+    width: 55%;
+    height: 80%;
+    object-fit: cover;
+    object-position: left;
+
+    @include desktop {
+      width: 100%;
+      margin-left: 0px;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &--left {
+      box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.25);
+
+      @include desktop {
+        box-shadow: none;
+      }
+    }
+
+    &--right {
+      box-shadow: -5px 0px 8px rgba(0, 0, 0, 0.25);
+
+      @include desktop {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 3%;
+
+    @include desktop {
+      position: relative;
+      color: white;
+      width: 90%;
+      height: 80%;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 13px;
+    margin-top: 5%;
+
+    @include desktop {
+      font-size: 24px;
+      text-shadow: 0 0 5px #000000;
+    }
+  }
+
+  &__description {
+    line-height: 150%;
+
+    @include desktop {
+      margin: 10%;
+      z-index: 0;
+      opacity: 0;
+    }
+  }
+
+  @include desktop {
+    &__colors {
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      display: flex;
+      opacity: 0.3;
+      z-index: 1;
+
+      &:hover {
+        .values__color--one {
+          width: 33.3%;
+          background-color: darkblue;
+        }
+        .values__color--two {
+          width: 33.3%;
+          background-color: white;
+        }
+        .values__color--three {
+          width: 33.3%;
+          background-color: red;
+        }
+      }
+    }
+  }
+}
