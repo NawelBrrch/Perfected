@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: "ProductSans-Bold";
-  src: url("../fonts/ProductSans-Bold.ttf");
+  font-family: "ProductSans-Regular";
+  src: url("../fonts/ProductSans-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -49,11 +49,11 @@
 // FONTS VARIABLES
 
 $h1-font: "WorkSans-Bold";
-$h2-font: "Raleway-Medium";
+$h2-font: "Raleway-SemiBold";
 $h3-font: "Raleway-Regular";
 $cta-font: "Raleway-Regular";
 $title-card: "Raleway-Bold";
 $p-font: "Raleway-Regular";
 $p-card-font: "Raleway-Italic";
-$brand-font: "ProductSans-Bold";
+$brand-font: "ProductSans-Regular";
 $menu-font: "Raleway-SemiBold";

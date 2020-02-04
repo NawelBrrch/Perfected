@@ -11,7 +11,7 @@
 }
 
 @mixin big-phone {
-  @media (min-width: 375px) and (max-width: 767px) {
+  @media (min-height: 600px) and (max-width: 767px) {
     @content;
   }
 }
