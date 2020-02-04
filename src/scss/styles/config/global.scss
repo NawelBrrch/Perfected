@@ -5,16 +5,19 @@ $brand-background-color: #ececec;
 
 //GLOBALS SETTINGS
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: $background-color;
-  overflow: hidden;
 }
 
 h1 {
   font-family: $h1-font;
   font-size: 1.4em;
 
-  @include desktop {
+  @include medium {
     font-size: 3.5em;
   }
 }
@@ -23,7 +26,7 @@ h2 {
   font-family: $h2-font;
   font-size: 1.5em;
 
-  @include desktop {
+  @include medium {
     font-size: 2.5em;
   }
 }
@@ -32,7 +35,7 @@ h3 {
   font-family: $h3-font;
   font-size: 0.9em;
 
-  @include desktop {
+  @include medium {
     font-size: 2em;
   }
 }
@@ -41,7 +44,7 @@ p {
   font-family: $p-font;
   font-size: 0.8em;
 
-  @include desktop {
+  @include medium {
     font-size: 1.5em;
   }
 }
@@ -50,7 +53,7 @@ p {
   font-family: $brand-font;
   font-size: 2em;
 
-  @include desktop {
+  @include medium {
     font-size: 2.2em;
   }
 }
@@ -58,8 +61,11 @@ p {
 .cta {
   font-family: $cta-font;
   font-size: 0.63em;
+  text-transform: uppercase;
+  padding: 15px 17px;
+  border: 1px solid #2f2f2f;
 
-  @include desktop {
+  @include medium {
     font-size: 1.5em;
   }
 }
@@ -68,7 +74,7 @@ p {
   font-family: $menu-font;
   font-size: 0.5em;
 
-  @include desktop {
+  @include medium {
     font-size: 0.9em;
   }
 }
@@ -76,7 +82,7 @@ p {
   font-family: $p-card-font;
   font-size: 0.8em;
 
-  @include desktop {
+  @include medium {
     font-size: 1.5em;
   }
 }

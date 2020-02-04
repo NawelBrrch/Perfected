@@ -2,7 +2,7 @@
   background-image: url("../../assets/perf-hero.png");
   margin-top: 0vh;
   background-size: auto 100%;
-  background-position: -53%;
+  background-position: right;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -11,10 +11,10 @@
   flex-direction: column;
   left: 3vw;
 
-  @include desktop {
+  @include medium {
     background-image: url("../../assets/perf-danaerys.png");
     margin-top: 4vh;
-    background-position: 135%;
+    background-position: right;
   }
 }
 
@@ -25,7 +25,7 @@
   margin-right: auto;
   width: 17vw;
 
-  @include desktop {
+  @include medium {
     display: none;
   }
 }
@@ -34,7 +34,7 @@
   padding-left: 4vw;
   z-index: 1;
 
-  @include desktop {
+  @include medium {
     padding-left: 10vw;
   }
 
@@ -45,7 +45,7 @@
     line-height: 1.5;
     letter-spacing: -0.5px;
 
-    @include desktop {
+    @include medium {
       margin-top: 13vh;
       line-height: 1;
       width: 54vw;
@@ -57,7 +57,7 @@
     width: 55vw;
     line-height: 1.7;
 
-    @include desktop {
+    @include medium {
       width: 43vw;
       line-height: 1.5;
       letter-spacing: 1px;
@@ -70,10 +70,10 @@
     display: inline-block;
     width: 31vw;
 
-    @include desktop {
+    @include medium {
       margin-top: 4vh;
       padding: 2vw 5vw;
-      width: 19vw;
+      width: 23vw;
     }
   }
 }
@@ -88,7 +88,7 @@
   font-size: 10em;
   z-index: -1;
 
-  @include desktop {
+  @include medium {
     transform: rotate(0deg);
     top: 35vh;
     left: -3vw;
@@ -101,7 +101,7 @@
 .header__container {
   display: none;
 
-  @include desktop {
+  @include medium {
     font-family: $p-font;
     display: flex;
     flex-direction: column;
