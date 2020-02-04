@@ -1,0 +1,61 @@
+.collection {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 525px;
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__carrousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 275px;
+  }
+
+  &__arrow {
+    width: 38px;
+    height: 38px;
+  }
+
+  &__arrowImg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__imgs {
+    width: 50vw;
+    height: 275px;
+  }
+
+  &__imgli {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &--modifier {
+      object-position: center left;
+    }
+
+    &--modifier2 {
+      object-position: center top;
+    }
+  }
+
+  &__img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #d6caca;
+
+    &--visible {
+      display: block;
+    }
+  }
+}
