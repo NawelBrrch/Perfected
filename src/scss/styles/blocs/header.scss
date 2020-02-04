@@ -22,24 +22,27 @@ header {
     max-width: 13%;
     align-self: center;
     padding-top: 7%;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
 
     @include medium {
       display: none;
     }
   }
   .header__text {
-    padding-left: 10%;
-    width: 84%;
-    height: 43%;
+    padding: 0 10%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    @include big-phone {
+      justify-content: space-around;
+    }
+
     @include medium {
       width: 80%;
       height: 70vh;
-      justify-content: space-between;
+      justify-content: space-around;
       margin-top: 10%;
     }
 
@@ -49,16 +52,28 @@ header {
     }
 
     h1 {
-      line-height: 150%;
+      line-height: 130%;
+      width: 70%;
+
+      @include big-phone {
+        line-height: 160%;
+        font-size: 30px;
+      }
 
       @include medium {
-        line-height: 66px;
+        line-height: 150%;
+        width: 100%;
       }
     }
 
     h3 {
-      line-height: 140%;
-      width: 70%;
+      line-height: 130%;
+      width: 50%;
+
+      @include big-phone {
+        line-height: 160%;
+        font-size: 20px;
+      }
 
       @include medium {
         width: 90%;
@@ -71,8 +86,19 @@ header {
     }
 
     button {
-      // width: 55%;
-      background-color: transparent;
+      width: 100%;
+      font-size: 15px;
+      padding: 15px 0;
+      background-color: #f3f3f3;
+      color: black;
+
+      @include medium {
+        background-color: transparent;
+        color: black;
+        padding: 14px 20px;
+        width: 65%;
+        font-size: 24px;
+      }
     }
   }
   .scroll-indication {
