@@ -4,7 +4,11 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 525px;
+  height: 75vh;
+
+  @include medium {
+    height: 750px;
+  }
 
   &__title {
     text-transform: uppercase;
@@ -22,6 +26,10 @@
   &__arrow {
     width: 38px;
     height: 38px;
+
+    @include medium {
+      display: none;
+    }
   }
 
   &__arrowImg {
@@ -31,7 +39,15 @@
 
   &__imgs {
     width: 50vw;
-    height: 275px;
+    height: 40vh;
+
+    @include medium {
+      display: flex;
+      flex-direction: row;
+      width: 80vw;
+      height: 430px;
+      justify-content: space-around;
+    }
   }
 
   &__imgli {
@@ -56,6 +72,11 @@
 
     &--visible {
       display: block;
+    }
+
+    @include medium {
+      display: block;
+      width: 30%;
     }
   }
 }
