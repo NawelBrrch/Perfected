@@ -21,8 +21,7 @@ header {
   .header__logo {
     max-width: 13%;
     align-self: center;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding: 7% 0 7% 0;
 
     @include medium {
       display: none;
