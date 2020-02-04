@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <img src="./assets/logo.png" alt="logo perfected" />
+      <img class="header__logo" src="./assets/logo.png" alt="logo perfected" />
       <div class="header__text">
         <h1>Imaginez un perfecto aussi unique que vous</h1>
         <h3>
@@ -25,9 +25,15 @@
         </a>
       </div>
       <p class="background__text">Perfected</p>
-      <p class="scroll-indication">En savoir plus</p>
+      <p class="scroll-indication">
+        En savoir plus
+        <img
+          class="arrow__scroll"
+          src="./assets/arrowDown.png"
+          alt="arrow scroll"
+        />
+      </p>
     </header>
-
     <section class="cards">
       <div class="cards__card">
         <img
@@ -43,7 +49,9 @@
             <li>- les poches</li>
             <li>- la sérigraphie</li>
           </ul>
-          <div class="cta cards__button">EN SAVOIR PLUS</div>
+          <a href="#custom" class="cta cards__button">
+            EN SAVOIR PLUS
+          </a>
         </div>
       </div>
       <div class="cards__card">
@@ -54,7 +62,9 @@
             <li>- le chanvre naturel</li>
             <li>- le tissu lyocell</li>
           </ul>
-          <div class="cta cards__button">EN SAVOIR PLUS</div>
+          <a href="#tissues" class="cta cards__button">
+            EN SAVOIR PLUS
+          </a>
         </div>
         <img
           class="cards__img cards__img--right"
@@ -75,7 +85,9 @@
             Perfected s’associe avec un artiste pour une collaboration inédite
             melant la mode et l’art.
           </p>
-          <div class="cta cards__button">EN SAVOIR PLUS</div>
+          <a href="#artist" class="cta cards__button">
+            EN SAVOIR PLUS
+          </a>
         </div>
       </div>
       <div class="cards__card">
@@ -86,7 +98,9 @@
             <li>- Livraison éco-responsable</li>
             <li>- Notre engagement associatif</li>
           </ul>
-          <div class="cards__button">EN SAVOIR PLUS</div>
+          <a href="#values" class="cta cards__button">
+            EN SAVOIR PLUS
+          </a>
         </div>
         <img
           class="cards__img cards__img--right"
@@ -95,7 +109,7 @@
         />
       </div>
     </section>
-    <section class="custom">
+    <section class="custom" id="custom">
       <h2>Créez votre Perfecto</h2>
       <div class="animations__customisation">
         <img src="./assets/animJacketWoman.gif" alt="woman jacket" />
