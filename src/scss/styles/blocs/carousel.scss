@@ -6,6 +6,7 @@
   align-items: center;
   height: 75vh;
   background-color: $brand-background-color;
+  padding: 5vh 0 5vh 0;
 
   @include medium {
     height: 90vh;

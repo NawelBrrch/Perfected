@@ -85,20 +85,21 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     @include medium {
       height: 90%;
       transform: translateY(15px);
-      padding: 10px 10px 20px 10px;
+      padding: 10px;
     }
 
     @include desktop {
       color: white;
-      padding: 20px 20px 40px 20px;
+      padding: 20px;
+      padding-bottom: 40px;
       width: 100%;
       height: 100%;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
     }
 
@@ -107,16 +108,12 @@
       display: flex;
       justify-content: center;
       text-decoration: none;
-      @include medium {
-        width: 100%;
-      }
     }
   }
 
   &__title {
     font-size: 0.8rem;
     padding: 0;
-    font-size: 0.8rem;
 
     @include big-phone {
       font-size: 0.9rem;
@@ -135,10 +132,9 @@
   }
 
   &__description {
-    line-height: 150%;
+    line-height: 200%;
     padding: 0;
     font-size: 0.7rem;
-    line-height: 200%;
 
     @include medium {
       opacity: 0;
@@ -154,10 +150,6 @@
 
   .cta {
     background-color: transparent;
-
-    @include medium {
-      width: 100%;
-    }
 
     &__arrow {
       max-width: 50%;
@@ -176,14 +168,6 @@
     text-decoration: none;
     color: #f3f3f3;
     padding: 0 15px;
-    display: none;
-
-    @include medium {
-      display: block;
-    }
-  }
-
-  a {
     display: none;
 
     @include medium {
