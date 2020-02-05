@@ -8,6 +8,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  padding-bottom: 10vh;
 
   @include medium {
     background: url("../../assets/perf-danaerys.png");
@@ -19,6 +20,7 @@
   @include desktop {
     height: 90vh;
     margin-top: 10vh;
+    padding-bottom: 0;
     background-position: right -150px bottom;
   }
 
