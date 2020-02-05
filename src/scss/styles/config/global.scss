@@ -13,6 +13,9 @@ $primary-color-black: #2f2f2f;
 body {
   background-color: $background-color;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @include medium {
     font-size: 16px;
@@ -31,21 +34,22 @@ p {
 
 h1 {
   font-family: $h1-font;
-  font-size: 2em;
+  font-size: 1.8rem;
   color: $primary-color-black;
+  line-height: 100%;
 
   @include medium {
-    font-size: 2.2em;
+    font-size: 2.2rem;
   }
 
   @include desktop {
-    font-size: 2.8em;
+    font-size: 3rem;
   }
 }
 
 h2 {
   font-family: $h2-font;
-  font-size: 1.45em;
+  font-size: 1.45rem;
   color: $primary-color-black;
 
   @include medium {
@@ -59,11 +63,11 @@ h2 {
 
 h3 {
   font-family: $h3-font;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: $primary-color-black;
 
   @include medium {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
   @include desktop {
