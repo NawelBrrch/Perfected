@@ -1,5 +1,7 @@
 header {
   height: 100vh;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   background: url("../../assets/perf-hero.png");
@@ -125,12 +127,11 @@ header {
   transform: rotate(-90deg);
   z-index: -1;
   position: absolute;
-  left: -240px;
+  left: -400px;
   top: 150px;
-  overflow: hidden;
-  display: none;
+
   @include medium {
     transform: rotate(0deg);
-    display: none;
+    left: 0;
   }
 }

@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/a2cd0917f3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/script.js"></script>
     <link rel="stylesheet" href="../src/scss/styles/styles.scss" />
     <title>Document</title>
   </head>
@@ -121,11 +122,14 @@
       </div>
       <button class="cta">Personnalisez votre perfecto</button>
     </section>
-    <section class="tissues">
-      <div class="tissues__choice">
+
+    <section class="fabrics">
+      <!-- FABRICS TEXT -->
+
+      <div class="fabrics__text">
         <h2>Nos tissus choisis avec soin</h2>
 
-        <div class="tissues is-checked">
+        <div id="lether__text" class="is-checked">
           <h3>Cuir d’eucalyptus</h3>
           <p>
             Il offre une résistance et une longévité extrême aux produits.
@@ -133,14 +137,14 @@
             quantités d'eau ou d'énergie pour être cultivée.
           </p>
         </div>
-        <div class="tissues">
+        <div id="wool__text" class="fabric__choice">
           <h3>La laine de chanvre</h3>
           <p>
             En plus d’être une matière écologique et locale de choix, c’est
             aussi la fibre végétale la plus robuste, et thermorégulatrice.
           </p>
         </div>
-        <div class="tissues">
+        <div id="lyocell__text" class="fabric__choice">
           <h3>Le Lyocell</h3>
           <p>
             C’est une fibre synthétique artificielle biodégradable fabriquée à
@@ -150,36 +154,260 @@
         </div>
       </div>
 
-      <div class="tissues__container">
-        <div class="tissues__container__radio">
-          <div class="tissues__radioButton">
-            <input
+      <!-- FABRICS CHOICE -->
+
+      <div class="fabrics__container">
+        <div class="fabric__radio fabric__radio__1">
+          <span class="fabric__input1"
+            ><input
               type="radio"
               id="lether"
-              name="tissues"
+              name="fabric"
               value="lether"
               checked
-            />
-            <label for="lether"></label>
-          </div>
+          /></span>
+          <img
+            class="fabric__image__lether"
+            src="assets/fabric1.png"
+            alt="lether"
+          />
+        </div>
 
-          <div class="tissues__radioButton">
-            <input type="radio" id="wool" name="tissues" value="wool" />
-            <label for="wool"></label>
+        <div class="fabric__radio">
+          <span class="fabric__input2"
+            ><input type="radio" id="wool" name="fabric" value="wool"
+          /></span>
+
+          <img
+            class="fabric__image__wool"
+            src="assets/fabric2.png"
+            alt="wool"
+          />
+        </div>
+
+        <div class="fabric__radio">
+          <span class="fabric__input3"
+            ><input
+              type="radio"
+              id="lyocell"
+              name="fabric"
+              value="lyocell"/></span
+          ><img
+            class="fabric__image__lyocell"
+            src="assets/fabric3.png"
+            alt="lyocell"
+          />
+        </div>
+
+        <div class="fabric__radio">
+          <img
+            class="fabric__image__shadow"
+            src="assets/fabric4.png"
+            alt="shadow"
+          />
+        </div>
+      </div>
+      <div class="fabric__background"><p>Tissus</p></div>
+    </section>
+
+    <section class="collection">
+      <h2 class="collection__title">Nos Creations</h2>
+      <div class="collection__carrousel">
+        <div class="collection__arrow collection__arrow--left">
+          <img
+            src="assets/arrow-left-circle-line.png"
+            alt="arrow left"
+            class=" collection__arrowImg"
+          />
+        </div>
+        <ul class="collection__imgs">
+          <li class="collection__img collection__img--visible">
+            <img
+              src="assets/collection1.png"
+              alt="man with a perfecto"
+              class="collection__imgli collection__imgli--modifier"
+            />
+          </li>
+          <li class="collection__img">
+            <img
+              src="assets/collection2.png"
+              alt="woman with a perfecto"
+              class="collection__imgli collection__imgli--modifier2"
+            />
+          </li>
+          <li class="collection__img">
+            <img
+              src="assets/collection3.png"
+              alt="woman with a perfecto"
+              class="collection__imgli"
+            />
+          </li>
+        </ul>
+        <div class="collection__arrow collection__arrow--right">
+          <img
+            src="assets/arrow-right-circle-line.png"
+            alt="arrow right"
+            class=" collection__arrowImg"
+          />
+        </div>
+      </div>
+      <div class="collection__button cta">Choisissez le votre</div>
+    </section>
+    <section class="artist">
+      <div class="artist__text">
+        <h2>Perfected <em>x</em> Murciano</h2>
+        <p>
+          Patrice Murciano est un artiste français autodidacte qui a décidé de
+          dépoussiérer les figures classiques de l’art et de la culture,
+          formelles ou populaires. Son talent navigue donc entre La Joconde et
+          Iron Man dans une explosion de couleurs chatoyantes. Il les emploie
+          pour sublimer les personnages, et leur envoyer le plein d’énergie
+          positive !
+        </p>
+        <a href="#">
+          <button class="cta">Découvrez Murciano</button>
+        </a>
+      </div>
+      <div class="artist__pictures">
+        <img
+          class="artist__murciano"
+          src="./assets/murciano-portrait.jpg"
+          alt="murciano portrait"
+        />
+        <div class="artist__paintings">
+          <img
+            class="artist__painting"
+            src="./assets/painting-yoga.jpg"
+            alt="yoda"
+          />
+          <img
+            class="artist__painting"
+            src="./assets/painting-joker.jpg"
+            alt="yoda"
+          />
+          <img
+            class="artist__painting"
+            src="./assets/painting-rino.jpg"
+            alt="yoda"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="values">
+      <h2>NOS VALEURS</h2>
+      <div class="values__value">
+        <img
+          class="values__pic values__pic--left"
+          src="../src/assets/photo-1501087063833-3773ee886f20.jfif"
+          alt=""
+        />
+        <div class="values__colors">
+          <div class="values__color--one"></div>
+          <div class="values__color--two"></div>
+          <div class="values__color--three"></div>
+        </div>
+        <div class="values__content">
+          <h3 class="values__title">Fabrication</h3>
+          <p class="p-card values__description">
+            Perfected s’associe avec un artiste pour une collaboration inédite
+            melant la mode et l’art.
+          </p>
+        </div>
+      </div>
+      <div class="values__value">
+        <div class="values__content">
+          <h3 class="values__title">Transport</h3>
+          <p class="p-card values__description">
+            La livraison de votre Perfecto est assuré par Vert chez vous,
+            spécialistes de la logistique éco-responsable
+          </p>
+        </div>
+        <img
+          class="values__pic values__pic--right"
+          src="../src/assets/green.png"
+          alt=""
+        />
+      </div>
+      <div class="values__value">
+        <img
+          class="values__pic values__pic--left"
+          src="../src/assets/photo-1506634064465-7dab4de896ed.jfif"
+          alt=""
+        />
+        <div class="values__content">
+          <h3 class="values__title">Association</h3>
+          <p class="p-card values__description">
+            Pendant tout le mois de Fevrier, nous sommes mécènes de
+            l’association PLANTONS pour l’avenir qui reboise les forêt
+            française.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="background__footer">
+        <div class="container__txt">
+          <div class="footer__info footer__infos">
+            <ul>
+              <h3>INFOS</h3>
+              <li><p>Mentions Légales</p></li>
+              <li><p>CGV</p></li>
+              <li><p>Histoire de la marque</p></li>
+            </ul>
           </div>
-          <div class="tissues__radioButton">
-            <input type="radio" id="lyocell" name="tissues" value="lyocell" />
-            <label for="lyocell"></label>
+          <div class="footer__info footer__services">
+            <ul>
+              <h3>SERVICES</h3>
+              <li><p>Livraison et retours</p></li>
+              <li><p>Sécurisé</p></li>
+              <li><p>Nous contacter</p></li>
+            </ul>
+          </div>
+          <div class="footer__info footer__languages">
+            <ul>
+              <h3>LANGUES</h3>
+              <li><p>Français</p></li>
+              <li><p>Anglais</p></li>
+            </ul>
           </div>
         </div>
-        <img class="tissues__image" src="assets/tissues.png" />
-      </div>
-      <div class="tissues__background"><p>Tissus</p></div>
-    </section>
-    <section class="collection"></section>
-    <section class="artist"></section>
-    <section class="values"></section>
 
-    <footer></footer>
+        <div class="icons__apps">
+          <a href="https://www.facebook.com/">
+            <svg class="icon icon-facebook2">
+              <use xlink:href="#icon-facebook2"></use>
+              <symbol id="icon-facebook2" viewBox="0 0 32 32">
+                <title>facebook2</title>
+                <path
+                  d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h13v-14h-4v-4h4v-2c0-3.306 2.694-6 6-6h4v4h-4c-1.1 0-2 0.9-2 2v2h6l-1 4h-5v14h9c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3z"
+                ></path>
+              </symbol>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/?hl=fr">
+            <svg class="icon icon-instagram">
+              <use href="#icon-instagram"></use>
+              <symbol id="icon-instagram" viewBox="0 0 32 32">
+                <title>instagram</title>
+                <path
+                  d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+                ></path>
+                <path
+                  d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"
+                ></path>
+                <path
+                  d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"
+                ></path>
+              </symbol>
+            </svg>
+          </a>
+        </div>
+
+        <div class="credits">
+          © 2020 - Perfected.
+        </div>
+      </div>
+    </footer>
   </body>
+  <script type="text/javascript" src="js/script.js"></script>
 </html>
