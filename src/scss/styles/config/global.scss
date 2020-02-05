@@ -5,7 +5,7 @@ $brand-background-color: #ececec;
 $primary-color-black: #2f2f2f;
 
 //GLOBALS SETTINGS
-//1em = 14px;
+
 * {
   box-sizing: border-box;
 }
@@ -13,51 +13,12 @@ $primary-color-black: #2f2f2f;
 body {
   background-color: $background-color;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @include medium {
-    font-size: 20px;
-  }
-}
-
-h1 {
-  font-family: $h1-font;
-  font-size: 2em;
-  color: $primary-color-black;
-
-  @include medium {
-    font-size: 2.2em;
-  }
-
-  @include desktop {
-    font-size: 2.8em;
-  }
-}
-
-h2 {
-  font-family: $h2-font;
-  font-size: 1.45em;
-  color: $primary-color-black;
-
-  @include medium {
-    font-size: 1.6em;
-  }
-
-  @include desktop {
-    font-size: 2em;
-  }
-}
-
-h3 {
-  font-family: $h3-font;
-  font-size: 1.2em;
-  color: $primary-color-black;
-
-  @include medium {
-    font-size: 1.4em;
-  }
-
-  @include desktop {
-    font-size: 1.6em;
+    font-size: 16px;
   }
 }
 
@@ -67,7 +28,50 @@ p {
   color: $primary-color-black;
 
   @include medium {
-    font-size: 0.7em;
+    font-size: 1rem;
+  }
+}
+
+h1 {
+  font-family: $h1-font;
+  font-size: 1.8rem;
+  color: $primary-color-black;
+  line-height: 100%;
+
+  @include medium {
+    font-size: 2.2rem;
+  }
+
+  @include desktop {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-family: $h2-font;
+  font-size: 1.45rem;
+  color: $primary-color-black;
+
+  @include medium {
+    font-size: 1.8rem;
+  }
+
+  @include desktop {
+    font-size: 2.2rem;
+  }
+}
+
+h3 {
+  font-family: $h3-font;
+  font-size: 1.1em;
+  color: $primary-color-black;
+
+  @include medium {
+    font-size: 1.4rem;
+  }
+
+  @include desktop {
+    font-size: 1.6em;
   }
 }
 
@@ -82,22 +86,16 @@ p {
 
 .cta {
   font-family: $cta-font;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   text-transform: uppercase;
-  padding: 8px 15px;
+  padding: 8px 10px;
   border: 1px solid #2f2f2f;
   color: $primary-color-black;
 
   @include medium {
-    font-size: 24px;
-    padding: 14px 45px;
-  }
-
-  @include desktop {
-    font-size: 1.2em;
-    line-height: 60px;
+    font-size: 1rem;
+    padding: 20px 30px;
     text-align: center;
-    padding: 0 45px;
   }
 }
 
