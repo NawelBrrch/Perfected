@@ -32,12 +32,11 @@
     border: solid 2px rgb(255, 0, 234);
     width: 100vw;
     height: 50vh;
-    margin: 0;
-    padding: 2vw;
   }
 
   @include medium {
     height: 40vh;
+    margin: 3vw;
   }
 
   h2 {
@@ -100,11 +99,11 @@
     width: 65vw;
 
     @include medium-fabrics {
-      width: 45vw;
+      width: 42vw;
     }
 
     @include desktop {
-      width: 35vw;
+      width: 32vw;
     }
   }
 
