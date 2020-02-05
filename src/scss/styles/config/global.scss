@@ -34,8 +34,9 @@ p {
 
 h1 {
   font-family: $h1-font;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: $primary-color-black;
+  line-height: 100%;
 
   @include medium {
     font-size: 2.2rem;
@@ -62,15 +63,11 @@ h2 {
 
 h3 {
   font-family: $h3-font;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: $primary-color-black;
 
-  @include big-phone {
-    font-size: 1.2rem;
-  }
-
   @include medium {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
   @include desktop {
