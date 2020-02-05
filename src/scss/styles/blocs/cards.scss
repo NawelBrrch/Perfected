@@ -90,6 +90,7 @@
       height: 90%;
       transform: translateY(15px);
       padding: 10px;
+      justify-content: space-between;
     }
 
     @include desktop {
@@ -97,7 +98,6 @@
       padding: 20px;
       width: 100%;
       height: 100%;
-      justify-content: space-between;
       align-items: center;
     }
 
@@ -132,6 +132,7 @@
     @include medium {
       opacity: 0;
       margin-top: 5%;
+      line-height: 200%;
     }
 
     @include desktop {
