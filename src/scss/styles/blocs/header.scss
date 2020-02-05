@@ -44,7 +44,7 @@
       width: 80%;
       height: 70vh;
       justify-content: space-around;
-      margin-top: 10%;
+      margin-top: 8%;
     }
 
     @include desktop {
@@ -84,17 +84,13 @@
 
     button {
       width: 100%;
-      font-size: 15px;
       padding: 15px 0;
       background-color: #f3f3f3;
-      color: black;
+      color: $primary-color-black;
 
       @include medium {
         background-color: transparent;
-        color: black;
-        padding: 14px 20px;
-        width: 65%;
-        font-size: 24px;
+        width: 50%;
       }
     }
   }
@@ -104,7 +100,7 @@
     @include medium {
       display: flex;
       align-items: center;
-      margin: 5% 0 2% 0;
+      margin: 2% 0 2% 0;
       flex-direction: column;
       height: 5%;
       justify-content: space-between;
@@ -112,13 +108,14 @@
   }
 
   .hero__arrow--scroll {
+    margin-top: 1%;
     width: 16px;
   }
 }
 
 .hero__background--text {
-  font-size: 13.6em;
-  font-weight: 600;
+  font-size: 400px;
+  font-weight: 900;
   color: $brand-background-color;
   transform: rotate(-90deg);
   z-index: -1;
