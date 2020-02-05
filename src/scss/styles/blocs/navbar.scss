@@ -1,0 +1,147 @@
+
+
+    .navbar {
+        position: fixed;
+        z-index: 10;
+        top: 90vh;
+        width: 100vw;
+    }
+
+    .navbar__desktop {
+        display: none;
+    }
+
+    .navbar__mobile {
+        background-color: #EFEFEF;
+        opacity: 1;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+        width: 100vw;
+        box-shadow: 0px 3px 10px #1c1c1c;
+    }
+
+    .element__mobile {
+        width: 30px;
+        height: 80%;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shopping__bag--mobile {
+        width: 24px;
+        height: 24px;
+    }
+
+    .navbar__mobile--text {
+        margin-bottom: 7px;
+    }
+
+
+
+//860Px
+@media  (min-width: 960px) {
+
+    .navbar {
+        position: fixed;
+        z-index: 10;
+        top: 0vh;
+    }
+
+    .navbar__desktop {
+        background-color: #EFEFEF;
+        opacity: 1;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        width: 100vw;
+        box-shadow: 0px -3px 10px #1c1c1c;
+        top: 0vh;
+    }
+
+    .navbar__mobile {
+        display: none;
+    }
+
+    .elements {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 160px;
+        height: 10vh;
+    }
+
+    .logo__name {
+        display: flex;
+        font-family: $brand-font;
+        font-size: 30px;
+        margin-left: 1vw;
+        margin-bottom: 1vh;
+    }
+
+    .logo__navbar {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 1vh;
+    }
+
+    .test {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar__menu {
+        font-family: $menu-font;
+        text-transform: uppercase;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .navbar__txt {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 700px;
+        margin-top: 1vh;
+    }
+
+    .navbar__element--text {
+        width: 150px;
+        height: 20px;
+        text-align: center;
+    }
+
+    .navbar__logo--shopping {
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 35px;
+        margin-bottom: 1vh;
+    }
+
+    .shopping__bag--logo{
+        width: 35px;
+        height: 35px;
+    }
+}
