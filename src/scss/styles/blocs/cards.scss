@@ -1,8 +1,9 @@
 .cards {
-  height: 725px;
+  //height: 725px;
   display: flex;
+  width: 100vw;
   flex-flow: column wrap;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
   align-items: center;
 
   @include medium {
@@ -23,7 +24,7 @@
   &__card {
     height: 150px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
     @include medium {
@@ -55,7 +56,7 @@
   }
 
   &__img {
-    width: 45%;
+    width: 50%;
     height: 100%;
     object-fit: cover;
 
@@ -85,8 +86,7 @@
   }
 
   &__content {
-    height: 80%;
-    width: 35%;
+    width: 1fr;
     display: flex;
     flex-direction: column;
 
@@ -103,11 +103,18 @@
       justify-content: space-between;
       align-items: center;
     }
+
+    a {
+      align-self: center;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__title {
     font-size: 13px;
     margin-bottom: 13px;
+    padding: 0;
 
     @include medium {
       font-size: 20px;
@@ -122,6 +129,7 @@
 
   &__description {
     line-height: 150%;
+    padding: 0;
 
     @include medium {
       margin-top: 5%;
@@ -129,6 +137,14 @@
 
     @include desktop {
       opacity: 0;
+    }
+  }
+
+  .cta {
+    background-color: transparent;
+
+    &__arrow {
+      max-width: 20%;
     }
   }
 
@@ -140,5 +156,10 @@
     text-decoration: none;
     color: #f3f3f3;
     padding: 0 15px;
+    display: none;
+
+    @include medium {
+      display: block;
+    }
   }
 }
