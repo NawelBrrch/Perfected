@@ -1,3 +1,5 @@
+window.scrollTo(0, 1);
+
 // Fabrics
 
 let lether = document.getElementById("lether");
