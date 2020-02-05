@@ -10,12 +10,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 5%;
+    padding: 10%;
+    height: 60vh;
 
     @include medium {
       width: 55%;
-      padding-left: 8%;
-      padding-right: 8%;
+      padding: 5% 8%;
+      height: 70vh;
     }
 
     h2 {
@@ -24,24 +25,14 @@
       em {
         color: #bc6907;
       }
-
-      @include medium {
-        text-transform: initial;
-      }
     }
 
     p {
       line-height: 150%;
-
-      @include medium {
-        font-size: 20px;
-      }
     }
 
     button {
       background-color: transparent;
-      width: 70%;
-      padding: 6px 11px;
 
       @include medium {
         width: 90%;
@@ -55,6 +46,7 @@
 
     @include medium {
       width: 45%;
+      height: 70vh;
     }
 
     .artist__murciano {
@@ -64,6 +56,7 @@
 
       @include medium {
         width: 45vw;
+        height: 50%;
       }
     }
 
@@ -74,6 +67,7 @@
 
       @include medium {
         width: 45vw;
+        height: 50%;
       }
     }
 

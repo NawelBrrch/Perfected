@@ -15,7 +15,17 @@ body {
   font-size: 14px;
 
   @include medium {
-    font-size: 20px;
+    font-size: 16px;
+  }
+}
+
+p {
+  font-family: $p-font;
+  font-size: 1em;
+  color: $primary-color-black;
+
+  @include medium {
+    font-size: 1rem;
   }
 }
 
@@ -39,11 +49,11 @@ h2 {
   color: $primary-color-black;
 
   @include medium {
-    font-size: 1.6em;
+    font-size: 1.8rem;
   }
 
   @include desktop {
-    font-size: 2em;
+    font-size: 2.2rem;
   }
 }
 
@@ -58,16 +68,6 @@ h3 {
 
   @include desktop {
     font-size: 1.6em;
-  }
-}
-
-p {
-  font-family: $p-font;
-  font-size: 1em;
-  color: $primary-color-black;
-
-  @include medium {
-    font-size: 0.7em;
   }
 }
 
@@ -89,15 +89,14 @@ p {
   color: $primary-color-black;
 
   @include medium {
-    font-size: 24px;
-    padding: 14px 45px;
+    font-size: 1rem;
+    padding: 21px 45px;
+    width: 60%;
   }
 
   @include desktop {
-    font-size: 1.2em;
-    line-height: 60px;
+    font-size: 1rem;
     text-align: center;
-    padding: 0 45px;
   }
 }
 
