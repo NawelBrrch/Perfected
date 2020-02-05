@@ -1,4 +1,4 @@
-header {
+.hero {
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -20,7 +20,7 @@ header {
     background-position: right -150px bottom;
   }
 
-  .header__logo {
+  .hero__logo {
     max-width: 13%;
     align-self: center;
     padding: 7% 0 7% 0;
@@ -29,7 +29,7 @@ header {
       display: none;
     }
   }
-  .header__text {
+  .hero__text {
     padding: 0 10%;
     height: 75%;
     display: flex;
@@ -57,28 +57,24 @@ header {
       width: 70%;
 
       @include big-phone {
-        line-height: 160%;
-        font-size: 30px;
+        line-height: 140%;
       }
 
       @include medium {
-        line-height: 130%;
         width: 100%;
       }
     }
 
     h3 {
-      line-height: 130%;
+      line-height: 150%;
       width: 50%;
 
       @include big-phone {
         line-height: 160%;
-        font-size: 20px;
       }
 
       @include medium {
         width: 90%;
-        line-height: 130%;
       }
 
       @include desktop {
@@ -102,7 +98,7 @@ header {
       }
     }
   }
-  .scroll-indication {
+  .hero__scroll-indication {
     display: none;
 
     @include medium {
@@ -115,12 +111,12 @@ header {
     }
   }
 
-  .arrow__scroll {
+  .hero__arrow--scroll {
     width: 16px;
   }
 }
 
-.background__text {
+.hero__background--text {
   font-size: 13.6em;
   font-weight: 600;
   color: $brand-background-color;

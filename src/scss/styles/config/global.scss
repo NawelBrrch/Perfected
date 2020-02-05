@@ -45,7 +45,7 @@ h1 {
 
 h2 {
   font-family: $h2-font;
-  font-size: 1.45em;
+  font-size: 1.45rem;
   color: $primary-color-black;
 
   @include medium {
@@ -61,6 +61,10 @@ h3 {
   font-family: $h3-font;
   font-size: 1.2em;
   color: $primary-color-black;
+
+  @include big-phone {
+    font-size: 1.2rem;
+  }
 
   @include medium {
     font-size: 1.4em;
