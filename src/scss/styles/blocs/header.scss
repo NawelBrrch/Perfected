@@ -1,6 +1,5 @@
 .hero {
-  height: 90vh;
-  margin-top: 10vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -18,6 +17,8 @@
   }
 
   @include desktop {
+    height: 90vh;
+    margin-top: 10vh;
     background-position: right -150px bottom;
   }
 
