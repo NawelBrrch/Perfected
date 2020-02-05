@@ -1,3 +1,30 @@
+// Fabrics
+
+let lether = document.getElementById("lether");
+let wool = document.getElementById("wool");
+let lyocell = document.getElementById("lyocell");
+
+let lether__text = document.getElementById("lether__text");
+let wool__text = document.getElementById("wool__text");
+let lyocell__text = document.getElementById("lyocell__text");
+
+lether.addEventListener("click", function() {
+  lether__text.className = "is-checked";
+  wool__text.className = "fabric__choice";
+  lyocell__text.className = "fabric__choice";
+});
+
+wool.addEventListener("click", function() {
+  lether__text.className = "fabric__choice";
+  wool__text.className = "is-checked";
+  lyocell__text.className = "fabric__choice";
+});
+
+lyocell.addEventListener("click", function() {
+  lether__text.className = "fabric__choice";
+  wool__text.className = "fabric__choice";
+  lyocell__text.className = "is-checked";
+});
 
 // Carrousel
 
@@ -22,4 +49,3 @@ elPrev.addEventListener("click", function() {
   jump(index - 1);
   console.log(index);
 });
-

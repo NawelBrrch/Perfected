@@ -13,59 +13,9 @@
     <title>Document</title>
   </head>
   <body>
-    <!--<header>
-    <section class='navbar'>
-      <div class='navbar__desktop'>
-        <div class='elements navbar__element'>
-          <div class='logo'>
-            <div class='logo__grpahism'>
-              <img class='logo__navbar' src='./assets/logo.png'>
-            </div>
-
-            <div class='logo__name'>
-              Perfected
-            </div>
-          </div>
-
-          <div class='navbar__txt'>
-            <div class='navbar__menu navbar__element--text'>personnalisation</div>
-            <div class='navbar__menu navbar__element--text'>nos tissus</div>
-            <div class='navbar__menu navbar__element--text'>notre artiste</div>
-            <div class='navbar__menu navbar__element--text'>nos valeurs</div>
-          </div>
-
-          <div class='navbar__logo--shopping'>
-            <img src='./assets/shopping-bag.svg' class='shopping__bag--logo'>
-          </div>
-
-      </div>
-    </div>
-    <div class='navbar__mobile'>
-      <div class='element__mobile'>
-        <p class='navbar__mobile--text'>Perso</p>
-        <img src='./assets/perso.svg'>
-      </div>
-      <div class='element__mobile'>
-        <p class='navbar__mobile--text'>Artiste</p>
-        <img src='./assets/artist.svg'>
-      </div>
-      <div class='element__mobile'>
-        <p class='navbar__mobile--text'>Tissus</p>
-        <img src='./assets/tissus.svg'>
-      </div>
-      <div class='element__mobile'>
-        <p class='navbar__mobile--text'>Valeurs</p>
-        <img src='./assets/valeurs.svg'>
-      </div>
-      <div class='element__mobile'>
-        <p class='navbar__mobile--text'>Panier</p>
-        <img src='./assets/shopping-bag.svg' class='shopping__bag--mobile'>
-      </div>
-    </div>
-  </header>-->
-    <section class="hero">
-      <img class="hero__logo" src="./assets/logo.png" alt="logo perfected" />
-      <div class="hero__text">
+    <header>
+      <img class="header__logo" src="./assets/logo.png" alt="logo perfected" />
+      <div class="header__text">
         <h1>Imaginez un perfecto aussi unique que vous</h1>
         <h3>
           Des perfectos originaux avec un impact positif à chaque étape de la
@@ -75,16 +25,16 @@
           <button class="cta">Inventez le votre</button>
         </a>
       </div>
-      <p class="hero__background--text">Perfected</p>
-      <p class="hero__scroll-indication">
+      <p class="background__text">Perfected</p>
+      <p class="scroll-indication">
         En savoir plus
         <img
-          class="hero__arrow--scroll"
+          class="arrow__scroll"
           src="./assets/arrowDown.png"
           alt="arrow scroll"
         />
       </p>
-    </section>
+    </header>
     <section class="cards">
       <div class="cards__card">
         <img
@@ -100,8 +50,8 @@
             <li>- les poches</li>
             <li>- la sérigraphie</li>
           </ul>
-          <a href="#custom">
-            <button class="cta cards__button">EN SAVOIR PLUS</button>
+          <a href="#custom" class="cta cards__button">
+            EN SAVOIR PLUS
           </a>
         </div>
       </div>
@@ -136,8 +86,8 @@
             Perfected s’associe avec un artiste pour une collaboration inédite
             melant la mode et l’art.
           </p>
-          <a href="#artist">
-            <button class="cta cards__button">EN SAVOIR PLUS</button>
+          <a href="#artist" class="cta cards__button">
+            EN SAVOIR PLUS
           </a>
         </div>
       </div>
@@ -149,8 +99,8 @@
             <li>- Livraison éco-responsable</li>
             <li>- Notre engagement associatif</li>
           </ul>
-          <a href="#values">
-            <button class="cta cards__button">EN SAVOIR PLUS</button>
+          <a href="#values" class="cta cards__button">
+            EN SAVOIR PLUS
           </a>
         </div>
         <img
@@ -173,10 +123,12 @@
       <button class="cta">Personnalisez votre perfecto</button>
     </section>
     <section class="fabrics">
-      <div class="fabrics__choice">
+      <!-- FABRICS TEXT -->
+
+      <div class="fabrics__text">
         <h2>Nos tissus choisis avec soin</h2>
 
-        <div class="fabric is-checked">
+        <div id="lether__text" class="is-checked">
           <h3>Cuir d’eucalyptus</h3>
           <p>
             Il offre une résistance et une longévité extrême aux produits.
@@ -184,14 +136,14 @@
             quantités d'eau ou d'énergie pour être cultivée.
           </p>
         </div>
-        <div class="fabric">
+        <div id="wool__text" class="fabric__choice">
           <h3>La laine de chanvre</h3>
           <p>
             En plus d’être une matière écologique et locale de choix, c’est
             aussi la fibre végétale la plus robuste, et thermorégulatrice.
           </p>
         </div>
-        <div class="fabric">
+        <div id="lyocell__text" class="fabric__choice">
           <h3>Le Lyocell</h3>
           <p>
             C’est une fibre synthétique artificielle biodégradable fabriquée à
@@ -201,38 +153,52 @@
         </div>
       </div>
 
-      <div class="fabric__container">
-        <div class="fabric__radio">
-          <input
-            type="radio"
-            id="lether"
-            name="fabric"
-            value="lether"
-            checked
-          />
-          <label for="lether"></label>
-          <input type="radio" id="wool" name="fabric" value="wool" />
-          <label for="wool"></label>
-          <input type="radio" id="lyocell" name="fabric" value="lyocell" />
-          <label for="lyocell"></label>
-        </div>
+      <!-- FABRICS CHOICE -->
 
-        <div class="fabric__image">
+      <div class="fabrics__container">
+        <div class="fabric__radio fabric__radio__1">
+          <span class="fabric__input1"
+            ><input
+              type="radio"
+              id="lether"
+              name="fabric"
+              value="lether"
+              checked
+          /></span>
           <img
             class="fabric__image__lether"
             src="assets/fabric1.png"
             alt="lether"
           />
+        </div>
+
+        <div class="fabric__radio">
+          <span class="fabric__input2"
+            ><input type="radio" id="wool" name="fabric" value="wool"
+          /></span>
+
           <img
             class="fabric__image__wool"
             src="assets/fabric2.png"
             alt="wool"
           />
-          <img
+        </div>
+
+        <div class="fabric__radio">
+          <span class="fabric__input3"
+            ><input
+              type="radio"
+              id="lyocell"
+              name="fabric"
+              value="lyocell"/></span
+          ><img
             class="fabric__image__lyocell"
             src="assets/fabric3.png"
             alt="lyocell"
           />
+        </div>
+
+        <div class="fabric__radio">
           <img
             class="fabric__image__shadow"
             src="assets/fabric4.png"
@@ -240,7 +206,6 @@
           />
         </div>
       </div>
-
       <div class="fabric__background"><p>Tissus</p></div>
     </section>
     <section class="collection">
@@ -408,7 +373,7 @@
         <div class="icons__apps">
           <a href="https://www.facebook.com/">
             <svg class="icon icon-facebook2">
-              <use href="#icon-facebook2"></use>
+              <use xlink:href="#icon-facebook2"></use>
               <symbol id="icon-facebook2" viewBox="0 0 32 32">
                 <title>facebook2</title>
                 <path
