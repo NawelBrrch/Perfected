@@ -9,7 +9,7 @@
   .artist__text {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10%;
     height: 60vh;
 
@@ -33,10 +33,6 @@
 
     button {
       background-color: transparent;
-
-      @include medium {
-        width: 90%;
-      }
     }
   }
 
