@@ -1,141 +1,19 @@
-<<<<<<< HEAD
 .cards {
-  height: 725px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-
-  @include desktop {
-    width: 95vw;
-    height: 95vh;
-    margin-left: 2.5vw;
-    margin-top: 2.5vw;
-  }
-
-  &__card {
-    height: 150px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    @include desktop {
-      position: relative;
-      width: 24%;
-      height: 100%;
-      margin-left: 0px;
-      filter: grayscale(90%);
-
-      &:hover {
-        filter: none;
-        .cards__description,
-        .cards__button {
-          opacity: 1;
-          text-shadow: 0 0 5px #000000;
-        }
-
-        .cards__img {
-          transform: scale(1.05);
-        }
-      }
-    }
-  }
-
-  &__img {
-    width: 45%;
-    height: 100%;
-    object-fit: cover;
-
-    @include desktop {
-      width: 100%;
-      margin-left: 0px;
-      position: absolute;
-      z-index: -1;
-      transition: transform 0.3s;
-    }
-
-    &--left {
-      box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.25);
-
-      @include desktop {
-        box-shadow: none;
-      }
-    }
-
-    &--right {
-      box-shadow: -5px 0px 8px rgba(0, 0, 0, 0.25);
-
-      @include desktop {
-        box-shadow: none;
-      }
-    }
-  }
-
-  &__content {
-    height: 70%;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-
-    @include desktop {
-      color: white;
-      width: 90%;
-      height: 90%;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-
-  &__title {
-    font-size: 13px;
-    margin-bottom: 13px;
-
-    @include desktop {
-      font-size: 24px;
-    }
-  }
-
-  &__description {
-    line-height: 150%;
-
-    @include desktop {
-      opacity: 0;
-    }
-  }
-
-  &__button {
-    max-width: 100%;
-    height: 60px;
-    border: 1px solid white;
-    opacity: 0;
-    text-decoration: none;
-    color: #f3f3f3;
-    padding: 0 15px;
-  }
-}
-=======
-.cards {
-  //height: 725px;
   display: flex;
   width: 100vw;
   flex-flow: column wrap;
-  // justify-content: space-evenly;
   align-items: center;
+  padding: 5% 3% 0 3%;
 
   @include medium {
-    margin: 2.5vw;
-    width: 95vw;
-    height: 95vh;
-    display: contents;
-  }
-
-  @include desktop {
-    width: 95vw;
-    height: 95vh;
-    margin-left: 2.5vw;
-    margin-top: 2.5vw;
+    margin-top: 30px;
+    width: 100%;
+    padding: 0;
+    height: 60vh;
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    justify-self: center;
   }
 
   &__card {
@@ -143,15 +21,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2%;
 
     @include medium {
-      height: 300px;
-      margin-top: 2vw;
-    }
-
-    @include desktop {
       position: relative;
-      width: 24%;
+      width: 23%;
       height: 100%;
       margin-left: 0px;
       filter: grayscale(90%);
@@ -173,11 +47,13 @@
   }
 
   &__img {
-    width: 50%;
+    width: 49%;
+    padding: 10px;
     height: 100%;
     object-fit: cover;
 
-    @include desktop {
+    @include medium {
+      padding: 0;
       width: 100%;
       margin-left: 0px;
       position: absolute;
@@ -196,27 +72,31 @@
     &--right {
       box-shadow: -5px 0px 8px rgba(0, 0, 0, 0.25);
 
-      @include desktop {
+      @include medium {
         box-shadow: none;
       }
     }
   }
 
   &__content {
-    width: 1fr;
+    padding: 10px 5% 10px 5%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     @include medium {
       height: 90%;
       transform: translateY(15px);
-      padding: 20px;
+      padding: 10px;
     }
 
     @include desktop {
       color: white;
-      width: 90%;
-      height: 90%;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
       justify-content: space-between;
       align-items: center;
     }
@@ -229,31 +109,31 @@
   }
 
   &__title {
-    font-size: 13px;
-    margin-bottom: 13px;
     padding: 0;
 
     @include medium {
-      font-size: 20px;
+      color: white;
+      font-size: 1rem;
+      text-shadow: 0 0 5px #000000;
+      align-self: flex-start;
     }
 
     @include desktop {
-      color: white;
-      text-shadow: 0 0 5px #000000;
-      font-size: 24px;
+      font-size: 1.3rem;
     }
   }
 
   &__description {
-    line-height: 150%;
+    line-height: 200%;
     padding: 0;
 
     @include medium {
+      opacity: 0;
       margin-top: 5%;
     }
 
     @include desktop {
-      opacity: 0;
+      align-self: flex-start;
     }
   }
 
@@ -261,7 +141,11 @@
     background-color: transparent;
 
     &__arrow {
-      max-width: 20%;
+      max-width: 50%;
+
+      @include medium {
+        display: none;
+      }
     }
   }
 
@@ -280,4 +164,3 @@
     }
   }
 }
->>>>>>> fd69131a02ec564d21628786425e077deba42e68
