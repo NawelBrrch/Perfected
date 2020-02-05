@@ -42,8 +42,7 @@ header {
     margin-bottom: 7px;
   }
 
-  //860Px
-  @media (min-width: 960px) {
+  @include desktop {
     .navbar {
       position: fixed;
       z-index: 10;
