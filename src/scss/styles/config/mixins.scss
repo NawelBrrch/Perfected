@@ -10,14 +10,14 @@
   }
 }
 
-@mixin big-phone {
-  @media (min-height: 600px) and (max-width: 767px) {
+@mixin medium-fabrics {
+  @media (min-width: 500px) {
     @content;
   }
 }
 
-@mixin tablet {
-  @media (min-width: 400px) {
+@mixin big-phone {
+  @media (min-height: 600px) and (max-width: 767px) {
     @content;
   }
 }
