@@ -116,10 +116,6 @@
     padding: 0;
     font-size: 0.8rem;
 
-    @include big-phone {
-      font-size: 1rem;
-    }
-
     @include medium {
       color: white;
       font-size: 1rem;
