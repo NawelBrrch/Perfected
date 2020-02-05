@@ -5,7 +5,7 @@ $brand-background-color: #ececec;
 $primary-color-black: #2f2f2f;
 
 //GLOBALS SETTINGS
-//1em = 14px;
+
 * {
   box-sizing: border-box;
 }
@@ -82,7 +82,7 @@ h3 {
 
 .cta {
   font-family: $cta-font;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   text-transform: uppercase;
   padding: 8px 10px;
   border: 1px solid #2f2f2f;
@@ -91,10 +91,6 @@ h3 {
   @include medium {
     font-size: 1rem;
     padding: 20px 30px;
-  }
-
-  @include desktop {
-    font-size: 1rem;
     text-align: center;
   }
 }
