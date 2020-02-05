@@ -8,6 +8,7 @@ header {
 
   .navbar__desktop {
     display: none;
+    width: 100%;
   }
 
   .navbar__mobile {
@@ -118,6 +119,11 @@ header {
       justify-content: space-between;
       width: 700px;
       margin-top: 1vh;
+
+      a {
+        text-decoration: none;
+        color: $primary-color-black;
+      }
     }
 
     .navbar__element--text {

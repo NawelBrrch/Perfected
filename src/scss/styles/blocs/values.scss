@@ -1,11 +1,11 @@
 .values {
-  margin-top: 2.5vw;
-  height: 575px;
-  width: 100vw;
+  padding: 8% 3% 8% 3%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  background-color: $brand-background-color;
 
   @include desktop {
     flex-direction: row;
@@ -14,8 +14,11 @@
     margin-left: 2.5vw;
     margin-top: 2.5vw;
   }
-  @include desktop {
-    h2 {
+
+  h2 {
+    margin-bottom: 8%;
+
+    @include desktop {
       position: absolute;
       margin-top: -40vh;
     }
@@ -23,10 +26,10 @@
 
   &__value {
     height: 150px;
-    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2%;
 
     @include desktop {
       width: 35%;
@@ -47,10 +50,10 @@
   }
 
   &__pic {
-    width: 55%;
-    height: 80%;
+    width: 49%;
+    padding: 10px;
+    height: 100%;
     object-fit: cover;
-    object-position: left;
 
     @include desktop {
       width: 100%;
@@ -77,11 +80,12 @@
   }
 
   &__content {
-    width: 90%;
+    padding: 10px 5% 10px 5%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-left: 3%;
+    justify-content: space-evenly;
 
     @include desktop {
       position: relative;
@@ -94,8 +98,7 @@
   }
 
   &__title {
-    font-size: 13px;
-    margin-top: 5%;
+    font-size: 0.8rem;
 
     @include desktop {
       font-size: 24px;
@@ -104,6 +107,7 @@
   }
 
   &__description {
+    font-size: 0.8em;
     line-height: 150%;
 
     @include desktop {
