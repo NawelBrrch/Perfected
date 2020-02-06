@@ -8,6 +8,7 @@ $primary-color-black: #2f2f2f;
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -85,17 +86,44 @@ h3 {
 }
 
 .cta {
+  background-color: transparent;
   font-family: $cta-font;
   font-size: 0.9rem;
   text-transform: uppercase;
-  padding: 8px 10px;
-  border: 1px solid #2f2f2f;
+  border: 3px solid $primary-color-black;
   color: $primary-color-black;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
 
   @include medium {
     font-size: 1rem;
-    padding: 20px 30px;
     text-align: center;
+    height: 4rem;
+    width: 20rem;
+  }
+
+  &:hover {
+    color: $background-color;
+
+    .btn__span {
+      width: 800px;
+      height: 800px;
+    }
+  }
+
+  .btn__span {
+    border-radius: 50%;
+    background-color: $primary-color-black;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transform: translate(-50%, -50%);
+    z-index: -1;
   }
 }
 
