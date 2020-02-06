@@ -39,8 +39,8 @@
   }
 
   @include medium {
-    height: 40vh;
-    margin: 3vw;
+    width: 100vw;
+    height: 60vh;
   }
 
   h2 {
@@ -49,6 +49,11 @@
 
     @include medium-fabrics {
       top: 6vh;
+      padding-bottom: 4vh;
+      padding-right: 1.5vw;
+    }
+    @include medium {
+      top: 7vh;
       padding-bottom: 4vh;
       padding-right: 1.5vw;
     }
@@ -61,6 +66,10 @@
     @include medium-fabrics {
       top: 17vh;
     }
+
+    @include medium {
+      top: 19vh;
+    }
   }
 
   p {
@@ -69,6 +78,11 @@
 
     @include medium-fabrics {
       top: 26vh;
+      padding-right: 1.5vw;
+    }
+
+    @include medium {
+      top: 29vh;
       padding-right: 1.5vw;
     }
   }
@@ -102,7 +116,7 @@
   }
 
   @include medium {
-    height: 50vh;
+    height: 60vh;
   }
 
   @mixin desktop {
@@ -141,7 +155,7 @@
     }
 
     @include medium {
-      top: 13vh;
+      top: 20vh;
       left: 2vw;
       padding-bottom: 2vh;
     }
@@ -165,7 +179,7 @@
     }
 
     @include medium {
-      top: 18vh;
+      top: 25.5vh;
       left: 2vw;
       padding-bottom: 2vh;
     }
@@ -188,7 +202,7 @@
       padding-bottom: 2vh;
     }
     @include medium {
-      top: 22vh;
+      top: 31vh;
       left: 2vw;
       padding-bottom: 2vh;
     }
@@ -205,8 +219,8 @@
     -moz-appearance: none;
     appearance: none;
     border-radius: 20%;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
 
     border: 0.2vw solid #2f2f2f;
     background-color: white;
