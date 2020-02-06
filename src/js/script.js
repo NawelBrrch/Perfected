@@ -1,3 +1,30 @@
+// Fabrics
+
+let lether = document.getElementById("lether");
+let wool = document.getElementById("wool");
+let lyocell = document.getElementById("lyocell");
+
+let lether__text = document.getElementById("lether__text");
+let wool__text = document.getElementById("wool__text");
+let lyocell__text = document.getElementById("lyocell__text");
+
+lether.addEventListener("click", function() {
+  lether__text.className = "is-checked";
+  wool__text.className = "fabric__choice";
+  lyocell__text.className = "fabric__choice";
+});
+
+wool.addEventListener("click", function() {
+  lether__text.className = "fabric__choice";
+  wool__text.className = "is-checked";
+  lyocell__text.className = "fabric__choice";
+});
+
+lyocell.addEventListener("click", function() {
+  lether__text.className = "fabric__choice";
+  wool__text.className = "fabric__choice";
+  lyocell__text.className = "is-checked";
+});
 
 // Carrousel
 
@@ -23,3 +50,16 @@ elPrev.addEventListener("click", function() {
   console.log(index);
 });
 
+//BUTTON ANIMATION
+
+let bbb = {};
+let btn6 = document.getElementById("btn");
+let btnspan = document.getElementById("btn__span");
+
+btn6.addEventListener("mouseover", function(e) {
+  bbb.x = e.clientX - btn6.offsetLeft;
+  bbb.y = e.clientY - btn6.offsetTop + window.scrollY;
+  btnspan.style.top = bbb.y + "px";
+  btnspan.style.left = bbb.x + "px";
+  console.log(bbb.y);
+});

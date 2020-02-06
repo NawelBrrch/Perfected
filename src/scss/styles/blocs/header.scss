@@ -1,4 +1,4 @@
-header {
+.hero {
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -8,19 +8,27 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  padding-bottom: 10vh;
 
   @include medium {
     background: url("../../assets/perf-danaerys.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right -300px bottom;
   }
 
+  @media (min-width: 900px) {
+    background-size: contain;
+  }
+
   @include desktop {
+    height: 90vh;
+    margin-top: 10vh;
+    padding-bottom: 0;
     background-position: right -150px bottom;
   }
 
-  .header__logo {
+  .hero__logo {
     max-width: 13%;
     align-self: center;
     padding: 7% 0 7% 0;
@@ -29,7 +37,7 @@ header {
       display: none;
     }
   }
-  .header__text {
+  .hero__text {
     padding: 0 10%;
     height: 75%;
     display: flex;
@@ -44,7 +52,7 @@ header {
       width: 80%;
       height: 70vh;
       justify-content: space-around;
-      margin-top: 10%;
+      margin-top: 8%;
     }
 
     @include desktop {
@@ -57,81 +65,68 @@ header {
       width: 70%;
 
       @include big-phone {
-        line-height: 160%;
-        font-size: 30px;
+        line-height: 140%;
       }
 
       @include medium {
-        line-height: 130%;
         width: 100%;
       }
     }
 
     h3 {
-      line-height: 130%;
+      line-height: 150%;
       width: 50%;
 
       @include big-phone {
         line-height: 160%;
-        font-size: 20px;
       }
 
       @include medium {
         width: 90%;
-        line-height: 130%;
       }
 
       @include desktop {
         width: 80%;
       }
     }
-
-    button {
-      width: 100%;
-      font-size: 15px;
-      padding: 15px 0;
-      background-color: #f3f3f3;
-      color: black;
-
-      @include medium {
-        background-color: transparent;
-        color: black;
-        padding: 14px 20px;
-        width: 65%;
-        font-size: 24px;
-      }
-    }
   }
-  .scroll-indication {
+  .hero__scroll--indication {
     display: none;
 
-    @include medium {
+    @media (min-width: 960px) {
       display: flex;
       align-items: center;
-      margin: 5% 0 2% 0;
+      margin: 2% 0 2% 0;
       flex-direction: column;
       height: 5%;
       justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: $primary-color-black;
+      }
     }
   }
 
-  .arrow__scroll {
+  .hero__arrow--scroll {
+    margin-top: 1%;
     width: 16px;
   }
 }
 
-.background__text {
-  font-size: 13.6em;
-  font-weight: 600;
+.hero__background--text {
+  font-size: 200px;
+  font-family: $title-card;
   color: $brand-background-color;
   transform: rotate(-90deg);
-  z-index: -1;
+  z-index: -2;
   position: absolute;
   left: -400px;
-  top: 150px;
+  top: 200px;
 
   @include medium {
     transform: rotate(0deg);
-    left: 0;
+    left: -100px;
+    font-size: 400px;
   }
 }

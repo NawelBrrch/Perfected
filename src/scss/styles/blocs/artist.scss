@@ -9,41 +9,34 @@
   .artist__text {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 5%;
+    padding: 10%;
 
     @include medium {
+      justify-content: space-between;
       width: 55%;
-      padding-left: 8%;
-      padding-right: 8%;
+      padding: 5% 8%;
+      height: 70vh;
     }
 
     h2 {
       text-transform: uppercase;
+      padding-bottom: 10%;
 
       em {
         color: #bc6907;
       }
 
       @include medium {
-        text-transform: initial;
+        padding: 0;
       }
     }
 
     p {
       line-height: 150%;
+      padding-bottom: 10%;
 
       @include medium {
-        font-size: 20px;
-      }
-    }
-
-    button {
-      background-color: transparent;
-      width: 70%;
-      padding: 6px 11px;
-
-      @include medium {
+        padding: 0;
         width: 90%;
       }
     }
@@ -55,25 +48,28 @@
 
     @include medium {
       width: 45%;
+      height: 70vh;
     }
 
     .artist__murciano {
       width: 100vw;
-      height: 30vw;
+      height: 40vw;
       object-fit: cover;
 
       @include medium {
         width: 45vw;
+        height: 50%;
       }
     }
 
     .artist__paintings {
-      height: 30vw;
+      height: 40vw;
       display: flex;
       background-color: black;
 
       @include medium {
         width: 45vw;
+        height: 50%;
       }
     }
 
@@ -81,9 +77,6 @@
       width: 33.3%;
       object-fit: cover;
       object-position: top;
-
-      @include medium {
-      }
     }
   }
 }
