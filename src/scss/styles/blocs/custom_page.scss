@@ -38,7 +38,7 @@
     width: 400px;
     height: 50px;
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
     display: flex;
     justify-content: space-evenly;
     user-select: none;
@@ -51,6 +51,7 @@
     &--visible {
       display: block;
       cursor: pointer;
+      border: 1px solid black;
     }
   }
 
@@ -79,6 +80,7 @@
       justify-content: space-evenly;
       flex-direction: column;
       margin-top: -1px;
+      border: 1px solid blue;
     }
   }
 
@@ -161,7 +163,79 @@
     width: 100px;
     cursor: pointer;
   }
+
+  &__recap {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    grid-template-areas:
+      "title1 recap1"
+      "title2 recap2"
+      "title3 recap3"
+      "title4 recap4"
+      "title5 recap5";
+  }
+
+  &__backimg {
+    width: 30px;
+    height: auto;
+    grid-area: recap4;
+    align-self: center;
+  }
+
+  &__recapp {
+    align-self: center;
+    grid-area: title1;
+
+    &:nth-child(2) {
+      grid-area: title2;
+    }
+    &:nth-child(3) {
+      grid-area: title3;
+    }
+    &:nth-child(4) {
+      grid-area: title4;
+    }
+    &:nth-child(5) {
+      grid-area: title5;
+    }
+    &:nth-child(6) {
+      grid-area: recap1;
+      margin: 0;
+    }
+
+    &:nth-child(8) {
+      grid-area: recap3;
+      margin: 0;
+    }
+    &:nth-child(9) {
+      grid-area: recap5;
+      margin: 0;
+    }
+  }
+
+  &__recapcolors {
+    align-self: center;
+    grid-area: recap2;
+    display: flex;
+    width: 15%;
+    height: 20px;
+    justify-content: space-between;
+  }
+
+  &__recapcolor {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    &:nth-child(1) {
+      background-color: brown;
+    }
+  }
 }
+
 #validate {
   border: 3px solid green;
 }
