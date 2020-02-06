@@ -8,7 +8,6 @@ header {
 
   .navbar__desktop {
     display: none;
-    width: 100%;
   }
 
   .navbar__mobile {
@@ -43,7 +42,7 @@ header {
     margin-bottom: 7px;
   }
 
-  @include desktop {
+  @media (min-width: 960px) {
     .navbar {
       position: fixed;
       z-index: 10;
