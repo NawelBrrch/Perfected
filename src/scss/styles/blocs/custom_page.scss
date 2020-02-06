@@ -17,12 +17,11 @@
     max-height: 50%;
     max-width: 80%;
     display: flex;
-    border: 1px solid red;
   }
 
   &__img {
     height: 300px;
-    width: 200px;
+    width: auto;
     display: none;
 
     &--visible {
@@ -169,4 +168,14 @@
 
 #navperso {
   text-decoration: underline;
+}
+
+#signature {
+  height: auto;
+  width: 240px;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color-black;
 }

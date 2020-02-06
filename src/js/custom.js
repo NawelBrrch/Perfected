@@ -62,9 +62,11 @@ function verify() {
 }
 
 let uniquestep = document.getElementById("unique");
+let signature = document.getElementById("signature");
 
 uniquestep.addEventListener("click", () => {
   removeClassBefore();
+  signature.classList.add("creation__img--visible");
 });
 
 function removeClassBefore() {
