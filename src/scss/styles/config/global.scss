@@ -101,14 +101,14 @@ h3 {
     text-align: center;
     height: 4rem;
     width: 20rem;
-  }
 
-  &:hover {
-    color: $background-color;
+    &:hover {
+      color: $background-color;
 
-    .btn__span {
-      width: 800px;
-      height: 800px;
+      .btn__span {
+        width: 800px;
+        height: 800px;
+      }
     }
   }
 

@@ -90,16 +90,21 @@
       }
     }
   }
-  .hero__scroll-indication {
+  .hero__scroll--indication {
     display: none;
 
-    @include medium {
+    @media (min-width: 960px) {
       display: flex;
       align-items: center;
       margin: 2% 0 2% 0;
       flex-direction: column;
       height: 5%;
       justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: $primary-color-black;
+      }
     }
   }
 
