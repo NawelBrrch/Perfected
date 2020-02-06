@@ -1,3 +1,12 @@
+@keyframes appear {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .fabrics {
   overflow: hidden;
   width: 100%;
@@ -29,6 +38,11 @@
   line-height: 150%;
   height: 60vh;
   padding: 6vh 3vw 4vh 3vw;
+  opacity: 0;
+
+  &.disapear {
+    animation: appear 0.3s forwards;
+  }
 
   @include medium-fabrics {
     border: solid 2px rgb(255, 0, 234);
