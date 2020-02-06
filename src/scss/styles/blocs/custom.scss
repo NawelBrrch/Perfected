@@ -5,8 +5,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
 
+  h2 {
+    padding-bottom: 5%;
+  }
   div {
     display: flex;
     justify-content: space-around;
@@ -15,6 +17,7 @@
 
     img {
       max-width: 100%;
+      padding-bottom: 5%;
 
       @include medium {
         max-width: 50%;
