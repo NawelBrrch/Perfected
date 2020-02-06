@@ -119,7 +119,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: 45vh;
+    height: 50vh;
 
     @include medium-fabrics {
       margin: 0;
@@ -141,6 +141,8 @@
   .fabric__radio {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 9vh;
 
     img {
       width: 65vw;
@@ -157,7 +159,7 @@
     .fabric__input1 {
       z-index: 8;
       position: absolute;
-      top: 9vh;
+      top: 15vh;
       left: 13vw;
 
       @include medium-fabrics {
@@ -182,7 +184,7 @@
     .fabric__input2 {
       z-index: 8;
       position: absolute;
-      top: 14vh;
+      top: 20vh;
       left: 13vw;
       @include medium-fabrics {
         top: 23vh;
@@ -206,7 +208,7 @@
     .fabric__input3 {
       z-index: 8;
       position: absolute;
-      top: 19.5vh;
+      top: 25vh;
       left: 13vw;
       @include medium-fabrics {
         top: 28vh;
@@ -267,7 +269,7 @@
   .fabric__image__lether {
     z-index: 5;
     position: absolute;
-    top: 5vh;
+    top: 10vh;
     left: 15.5vw;
 
     @include medium-fabrics {
@@ -284,7 +286,7 @@
   .fabric__image__wool {
     z-index: 4;
     position: absolute;
-    top: 10vh;
+    top: 15vh;
     left: 15.5vw;
 
     @include medium-fabrics {
@@ -301,7 +303,7 @@
   .fabric__image__lyocell {
     z-index: 3;
     position: absolute;
-    top: 15vh;
+    top: 20vh;
     left: 15.5vw;
 
     @include medium-fabrics {
@@ -318,7 +320,7 @@
   .fabric__image__shadow {
     z-index: 2;
     position: absolute;
-    top: 18vh;
+    top: 23vh;
     left: 15.5vw;
     padding: 1vh;
 
