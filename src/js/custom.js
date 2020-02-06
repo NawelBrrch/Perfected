@@ -6,6 +6,18 @@ let next = document.getElementById("next");
 let validate = document.getElementById("validate");
 let index = 0;
 
+let step1 = document.getElementById("step1");
+let step2 = document.getElementById("step2");
+let step3 = document.getElementById("step3");
+let step4 = document.getElementById("step4");
+let step5 = document.getElementById("step5");
+let step6 = document.getElementById("step6");
+let step7 = document.getElementById("step7");
+let step8 = document.getElementById("step8");
+let step9 = document.getElementById("step9");
+let illustrationList = document.querySelectorAll(".creation__img");
+let steps = [step1, step2, step3, step4, step5, step6, step7, step8, step9];
+
 prev.addEventListener("click", function() {
   jump(index - 1);
   verify();
@@ -29,6 +41,13 @@ for (let i = 0; i < clickers.length; i++) {
   clickers[i].addEventListener("click", function() {
     jump(i);
     verify();
+
+    if (index > clickers.length - 2) {
+      removeClassBefore();
+      illustrationList[7].classList.add("creation__img--visible");
+      illustrationList[9].classList.add("creation__img--visible");
+      console.log("test");
+    }
   });
 }
 
@@ -42,17 +61,11 @@ function verify() {
   }
 }
 
-let step1 = document.getElementById("step1");
-let step2 = document.getElementById("step2");
-let step3 = document.getElementById("step3");
-let step4 = document.getElementById("step4");
-let step5 = document.getElementById("step5");
-let step6 = document.getElementById("step6");
-let step7 = document.getElementById("step7");
-let step8 = document.getElementById("step8");
-let step9 = document.getElementById("step9");
-let illustrationList = document.querySelectorAll(".creation__img");
-let steps = [step1, step2, step3, step4, step5, step6, step7, step8, step9];
+let uniquestep = document.getElementById("unique");
+
+uniquestep.addEventListener("click", () => {
+  removeClassBefore();
+});
 
 function removeClassBefore() {
   for (let i = 0; i < illustrationList.length; i++) {
@@ -68,7 +81,7 @@ function addEvents(index) {
   steps[index].addEventListener("click", function() {
     removeClassBefore();
     addClassNext(index + 1);
-    console.log("hello");
+    console.log(index);
   });
 }
 
