@@ -20,9 +20,6 @@
   justify-content: space-around;
   opacity: 0;
 
-  //padding: 3vh 0 2vh 0;
-  border: solid 2px rgb(0, 4, 255);
-
   &.is-appear {
     animation: appear 0.5s forwards;
   }
@@ -41,7 +38,6 @@
 // FABRICS TEXT
 
 .fabrics__text {
-  border: solid 2px rgb(82, 226, 236);
   position: relative;
   width: 100%;
   line-height: 150%;
@@ -49,7 +45,6 @@
   padding: 6vh 3vw 4vh 3vw;
 
   @include medium-fabrics {
-    border: solid 2px rgb(255, 0, 234);
     width: 100vw;
     height: 60vh;
     margin: 0;
@@ -124,7 +119,6 @@
   justify-content: center;
   position: relative;
   height: 60vh;
-  border: solid 2px red;
 
   @include medium-fabrics {
     margin: 0;
@@ -271,7 +265,6 @@
 // IMAGES FABRICS
 
 .fabric__image__lether {
-  border: solid 2px rgb(20, 197, 29);
   z-index: 5;
   position: absolute;
   top: 5vh;
@@ -289,7 +282,6 @@
 }
 
 .fabric__image__wool {
-  border: solid 2px rgb(230, 119, 196);
   z-index: 4;
   position: absolute;
   top: 10vh;
@@ -307,7 +299,6 @@
 }
 
 .fabric__image__lyocell {
-  border: solid 2px rgb(197, 20, 173);
   z-index: 3;
   position: absolute;
   top: 15vh;
@@ -325,7 +316,6 @@
 }
 
 .fabric__image__shadow {
-  border: solid 2px rgb(240, 80, 32);
   z-index: 2;
   position: absolute;
   top: 18vh;
@@ -350,7 +340,6 @@
 
   p {
     display: block;
-    border: solid 2px rgb(49, 240, 32);
     font-family: $brand-font;
     color: $brand-background-color;
     z-index: -1;

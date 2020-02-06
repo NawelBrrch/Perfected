@@ -1,18 +1,11 @@
-.headertest {
-  width: 100vw;
-  height: 10vh;
-  background: black;
-  overflow: hidden;
-}
-
 .creation {
   height: 90vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
+  margin-top: 10vh;
 
   &__content {
-    border: 1px solid yellowgreen;
     width: 65vw;
     display: flex;
     flex-direction: column;
@@ -22,13 +15,14 @@
 
   &__imgs {
     max-height: 50%;
-    max-width: 28%;
+    max-width: 80%;
+    display: flex;
     border: 1px solid red;
   }
 
   &__img {
-    height: 100%;
-    width: 100%;
+    height: 300px;
+    width: 200px;
     display: none;
 
     &--visible {
@@ -37,7 +31,6 @@
   }
 
   &__changes {
-    border: 1px solid blue;
     width: 35vw;
     height: 90vh;
   }
@@ -55,10 +48,8 @@
   &__step {
     width: 120px;
     height: 100%;
-    border: 2px solid blue;
     display: none;
     &--visible {
-      border: 3px solid pink;
       display: block;
       cursor: pointer;
     }
@@ -67,6 +58,7 @@
   &__changes {
     display: flex;
     flex-direction: column;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.25);
   }
 
   &__choice {
@@ -87,14 +79,13 @@
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
-      border: 1px solid blueviolet;
       margin-top: -1px;
     }
   }
 
   &__title {
     color: white;
-    transform: translateY(50%);
+    transform: translateY(25%);
     margin-left: 3%;
   }
 
@@ -152,8 +143,30 @@
     width: 90px;
     height: 120px;
   }
+
+  &__input {
+    height: 50px;
+    font-size: 20px;
+    width: 150px;
+  }
+
+  &__paragraph {
+    margin-left: 15px;
+  }
+
+  &__okbtn {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+  }
 }
 #validate {
-  cursor: wait;
   border: 3px solid green;
+}
+
+#navperso {
+  text-decoration: underline;
 }
