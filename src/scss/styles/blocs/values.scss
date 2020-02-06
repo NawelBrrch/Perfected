@@ -16,15 +16,13 @@
   }
 
   h2 {
-    display: none;
     margin-bottom: 8%;
 
     @include medium {
       position: absolute;
-      margin-top: -40vh;
+      margin-top: -30vh;
     }
   }
-
   &__value {
     height: 150px;
     display: flex;
@@ -56,7 +54,7 @@
         filter: none;
 
         .knowMore {
-          display: none;
+          opacity: 0;
         }
 
         .values__description {
@@ -122,6 +120,7 @@
       color: $background-color;
       font-size: 24px;
       text-shadow: 0 0 5px #000000;
+      align-self: center;
     }
   }
 
@@ -130,7 +129,9 @@
     line-height: 150%;
 
     @include medium {
-      font-size: 1em;
+      align-self: center;
+      text-align: center;
+      font-size: 1.5em;
       color: $background-color;
       z-index: 0;
       opacity: 0;
