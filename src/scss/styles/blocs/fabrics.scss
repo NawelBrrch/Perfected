@@ -1,13 +1,12 @@
 .fabrics {
-  position: relative;
   overflow: hidden;
   width: 100%;
-  height: 70vh;
+  height: 82vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 3vh 0 2vh 0;
+  //padding: 3vh 0 2vh 0;
   border: solid 2px rgb(0, 4, 255);
 
   @include medium-fabrics {
@@ -25,13 +24,19 @@
 // FABRICS TEXT
 
 .fabrics__text {
-  margin: 5vw;
+  border: solid 2px rgb(82, 226, 236);
+  position: relative;
+  width: 100%;
   line-height: 150%;
+  height: 60vh;
+  padding: 6vh 3vw 4vh 3vw;
 
   @include medium-fabrics {
     border: solid 2px rgb(255, 0, 234);
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
+    margin: 0;
+    padding-left: 3vw;
   }
 
   @include medium {
@@ -40,7 +45,8 @@
   }
 
   h2 {
-    padding-bottom: 4vh;
+    position: absolute;
+    top: 6vh;
 
     @include medium-fabrics {
       padding-top: 3vh;
@@ -50,6 +56,13 @@
 
   h3 {
     padding-bottom: 2vh;
+    position: absolute;
+    top: 15vh;
+  }
+
+  p {
+    position: absolute;
+    top: 22vh;
   }
 }
 
@@ -70,7 +83,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  height: 45vh;
+  height: 60vh;
   border: solid 2px red;
 
   @include medium-fabrics {
@@ -110,7 +123,7 @@
   .fabric__input1 {
     z-index: 8;
     position: absolute;
-    top: 11vh;
+    top: 9vh;
     left: 13vw;
 
     @include medium-fabrics {
@@ -135,7 +148,7 @@
   .fabric__input2 {
     z-index: 8;
     position: absolute;
-    top: 16vh;
+    top: 14vh;
     left: 13vw;
     @include medium-fabrics {
       top: 17vh;
@@ -159,7 +172,7 @@
   .fabric__input3 {
     z-index: 8;
     position: absolute;
-    top: 21vh;
+    top: 19.5vh;
     left: 13vw;
     @include medium-fabrics {
       top: 22vh;
@@ -184,8 +197,8 @@
     -moz-appearance: none;
     appearance: none;
     border-radius: 20%;
-    width: 20px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
 
     border: 0.2vw solid #2f2f2f;
     background-color: white;
@@ -292,7 +305,8 @@
 // TISSUS BACKGROUND
 
 .fabric__background {
-  position: relative;
+  width: 100%;
+  height: 30vh;
 
   p {
     display: block;
@@ -301,9 +315,9 @@
     color: $brand-background-color;
     z-index: -1;
     position: absolute;
-    left: -59vw;
-    bottom: 10vh;
-    font-size: 10em;
+    font-size: 11em;
+    left: -10vw;
+    bottom: 3vh;
   }
 
   @include medium-fabrics {
