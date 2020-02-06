@@ -144,13 +144,9 @@
 
     @include medium {
       color: white;
-      font-size: 1rem;
+      font-size: 1.5rem;
       text-shadow: 0 0 5px #000000;
-      align-self: flex-start;
-    }
-
-    @include desktop {
-      font-size: 1.3rem;
+      align-self: center;
     }
   }
 
