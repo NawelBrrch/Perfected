@@ -52,17 +52,18 @@ elPrev.addEventListener("click", function() {
 
 //BUTTON ANIMATION
 
-let bbb = {};
-let btn6 = document.getElementById("btn");
-let btnspan = document.getElementById("btn__span");
+let spanCoords = {};
+let buttons = document.querySelectorAll(".cta");
+let spans = document.querySelectorAll(".btn__span");
 
-btn6.addEventListener("mouseover", function(e) {
-  bbb.x = e.clientX - btn6.offsetLeft;
-  bbb.y = e.clientY - btn6.offsetTop + window.scrollY;
-  btnspan.style.top = bbb.y + "px";
-  btnspan.style.left = bbb.x + "px";
-  console.log(bbb.y);
-});
+for (let i = 0; i < buttons.length; i++)
+  buttons[i].addEventListener("mouseover", function(e) {
+    spanCoords.x = e.clientX - buttons[i].offsetLeft;
+    spanCoords.y = e.clientY - buttons[i].offsetTop + window.scrollY;
+    spans[i].style.left = spanCoords.x + "px";
+    spans[i].style.top = spanCoords.y + "px";
+    console.log(spanCoords);
+  });
 
 //ARROW SCROLL
 

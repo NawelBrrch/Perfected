@@ -108,19 +108,19 @@ h3 {
     &:hover {
       color: $background-color;
 
-      .btn__span {
+      & .btn__span {
         width: 800px;
         height: 800px;
       }
     }
   }
 
-  .btn__span {
+  & .btn__span {
     border-radius: 50%;
     background-color: $primary-color-black;
-    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-    width: 0px;
-    height: 0px;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 0;
     left: 0;
