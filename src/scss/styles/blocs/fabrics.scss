@@ -59,44 +59,49 @@
 
     @include desktop {
       top: 10vh;
-
-    @include medium {
-      top: 7vh;
-      padding-bottom: 4vh;
-      padding-right: 1.5vw;
     }
   }
 
-  h3 {
-    padding-bottom: 2vh;
-    position: absolute;
-    top: 15vh;
+  @include medium {
+    top: 7vh;
+    padding-bottom: 4vh;
+    padding-right: 1.5vw;
+  }
+}
 
-    @include medium-fabrics {
-      top: 17vh;
-    }
-    @include desktop {
-      top: 22vh;
-    @include medium {
-      top: 19vh;
-    }
+h3 {
+  padding-bottom: 2vh;
+  position: absolute;
+  top: 15vh;
+
+  @include medium-fabrics {
+    top: 17vh;
   }
 
-  p {
-    position: absolute;
+  @include desktop {
     top: 22vh;
+  }
 
-    @include medium-fabrics {
-      top: 26vh;
-      padding-right: 1.5vw;
-    }
+  @include medium {
+    top: 19vh;
+  }
+}
 
-    @include desktop {
-      top: 35vh;
-    @include medium {
-      top: 29vh;
-      padding-right: 1.5vw;
-    }
+p {
+  position: absolute;
+  top: 22vh;
+
+  @include medium-fabrics {
+    top: 26vh;
+    padding-right: 1.5vw;
+  }
+
+  @include desktop {
+    top: 35vh;
+  }
+  @include medium {
+    top: 29vh;
+    padding-right: 1.5vw;
   }
 }
 
