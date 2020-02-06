@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: space-around;
   //padding: 3vh 0 2vh 0;
-  border: solid 2px rgb(0, 4, 255);
 
   @include medium-fabrics {
     flex-direction: row;
@@ -23,23 +22,22 @@
 // FABRICS TEXT
 .fabrics {
   .fabrics__text {
-    border: solid 2px rgb(82, 226, 236);
     position: relative;
     width: 100%;
     line-height: 150%;
-    height: 60vh;
-    padding: 6vh 3vw 4vh 3vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
 
     @include medium-fabrics {
       width: 100vw;
       height: 60vh;
-      margin: 0;
-      padding-left: 3vw;
     }
 
     @include medium {
       width: 100vw;
-      height: 60vh;
+      height: 70vh;
     }
 
     @include desktop {
@@ -48,31 +46,29 @@
     }
 
     h2 {
-      position: absolute;
-      top: 4vh;
+      text-transform: uppercase;
+      padding-bottom: 10%;
+      line-height: 150%;
 
       @include medium-fabrics {
-        top: 6vh;
-        padding-bottom: 4vh;
-        padding-right: 1.5vw;
+        padding: 10% 0;
       }
 
       @include desktop {
-        top: 10vh;
+        padding-top: 0;
       }
     }
 
     @include medium {
-      top: 7vh;
-      padding-bottom: 4vh;
-      padding-right: 1.5vw;
+      justify-content: flex-start;
+      width: 100%;
+      height: 70vh;
+      padding: 8%;
     }
   }
 
   h3 {
-    padding-bottom: 2vh;
-    position: absolute;
-    top: 15vh;
+    padding-bottom: 10%;
 
     @include medium-fabrics {
       top: 17vh;
@@ -88,8 +84,8 @@
   }
 
   p {
-    position: absolute;
-    top: 22vh;
+    line-height: 150%;
+    padding-bottom: 10%;
 
     @include medium-fabrics {
       top: 26vh;
@@ -117,13 +113,13 @@
 
   .fabrics__container {
     margin: 5vw;
+    margin-bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: 60vh;
-    border: solid 2px red;
+    height: 45vh;
 
     @include medium-fabrics {
       margin: 0;
@@ -269,7 +265,6 @@
   // IMAGES FABRICS
 
   .fabric__image__lether {
-    border: solid 2px rgb(20, 197, 29);
     z-index: 5;
     position: absolute;
     top: 5vh;
@@ -287,7 +282,6 @@
   }
 
   .fabric__image__wool {
-    border: solid 2px rgb(230, 119, 196);
     z-index: 4;
     position: absolute;
     top: 10vh;
@@ -305,7 +299,6 @@
   }
 
   .fabric__image__lyocell {
-    border: solid 2px rgb(197, 20, 173);
     z-index: 3;
     position: absolute;
     top: 15vh;
@@ -323,7 +316,6 @@
   }
 
   .fabric__image__shadow {
-    border: solid 2px rgb(240, 80, 32);
     z-index: 2;
     position: absolute;
     top: 18vh;
@@ -348,7 +340,6 @@
 
     p {
       display: block;
-      border: solid 2px rgb(49, 240, 32);
       font-family: $brand-font;
       color: $brand-background-color;
       z-index: -1;
