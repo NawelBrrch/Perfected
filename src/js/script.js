@@ -63,3 +63,8 @@ btn6.addEventListener("mouseover", function(e) {
   btnspan.style.left = bbb.x + "px";
   console.log(bbb.y);
 });
+
+//ARROW SCROLL
+
+let arrow = document.querySelector(".hero__arrow--scroll");
+console.log("hello", arrow);
