@@ -1,0 +1,159 @@
+.headertest {
+  width: 100vw;
+  height: 10vh;
+  background: black;
+  overflow: hidden;
+}
+
+.creation {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+
+  &__content {
+    border: 1px solid yellowgreen;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__imgs {
+    max-height: 50%;
+    max-width: 28%;
+    border: 1px solid red;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    display: none;
+
+    &--visible {
+      display: block;
+    }
+  }
+
+  &__changes {
+    border: 1px solid blue;
+    width: 35vw;
+    height: 90vh;
+  }
+
+  &__buttons {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    user-select: none;
+  }
+
+  &__step {
+    width: 120px;
+    height: 100%;
+    border: 2px solid blue;
+    display: none;
+    &--visible {
+      border: 3px solid pink;
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  &__changes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__choice {
+    width: 100%;
+    height: 60px;
+    background: black;
+    margin: 0;
+    border-bottom: 1px white solid;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__change {
+    display: none;
+
+    &--visible {
+      height: 200px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      border: 1px solid blueviolet;
+      margin-top: -1px;
+    }
+  }
+
+  &__title {
+    color: white;
+    transform: translateY(50%);
+    margin-left: 3%;
+  }
+
+  &__arrowDown {
+    width: 40px;
+    height: 40px;
+    transform: translateY(25%);
+  }
+
+  &__clothes {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__color {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: yellow;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+
+    &:nth-child(2) {
+      background-color: black;
+    }
+    &:nth-child(3) {
+      background-color: green;
+    }
+    &:nth-child(4) {
+      background-color: brown;
+    }
+    &:nth-child(5) {
+      background-color: blue;
+    }
+    &:nth-child(6) {
+      background-color: white;
+    }
+  }
+
+  &__custom {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+
+    &--modifier {
+      height: 120px;
+    }
+  }
+
+  &__pocket {
+    width: 45px;
+    height: 50px;
+  }
+
+  &__painting {
+    width: 90px;
+    height: 120px;
+  }
+}
+#validate {
+  cursor: wait;
+  border: 3px solid green;
+}

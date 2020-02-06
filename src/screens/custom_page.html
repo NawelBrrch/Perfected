@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Personnalistation</title>
+    <link rel="stylesheet" href="../scss/styles/styles.scss" />
+  </head>
+  <body>
+    <!-- <header></header> -->
+    <div class="headertest"></div>
+    <section class="creation">
+      <div class="creation__content">
+        <div class="creation__imgs">
+          <img
+            src="../assets/perfecto-step0.png"
+            alt="visualisation"
+            class="creation__img creation__img--visible"
+          />
+          <img
+            src="../assets/perfecto-step1.png"
+            alt="visualisation"
+            class="creation__img"
+          />
+          <img
+            src="../assets/perfecto-step2.png"
+            alt="visualisation"
+            class="creation__img"
+          />
+          <img
+            src="../assets/perfecto-step3.png"
+            alt="visualisation"
+            class="creation__img"
+          />
+          <img
+            src="../assets/perfecto-step3.png"
+            alt="visualisation"
+            class="creation__img"
+          />
+          <img
+            src="../assets/perfecto-step5.png"
+            alt="visualisation"
+            class="creation__img"
+          />
+          <img
+            src="../assets/perfecto-step6.png"
+            alt="visualisation"
+            class="creation__img"
+          />
+          <img
+            src="../assets/perfecto-step7.png"
+            alt="visualisation"
+            class="creation__img"
+          />
+          <img
+            src="../assets/perfecto-step8.png"
+            alt="visualisation"
+            class="creation__img"
+          />
+          <img
+            src="../assets/perfecto-step9.png"
+            alt="visualisation"
+            class="creation__img"
+          />
+        </div>
+        <div class="creation__buttons">
+          <div class="creation__step creation__step--visible" id="prev">
+            Précédent
+          </div>
+          <div class="creation__step creation__step--visible" id="next">
+            Suivant
+          </div>
+          <div class="creation__step" id="validate">
+            Valider
+          </div>
+        </div>
+      </div>
+      <div class="creation__changes">
+        <div class="creation__choice">
+          <h3 class="creation__title">Coupe</h3>
+          <img
+            src="../assets/arrow-down-s-line.png"
+            alt="arrow down"
+            class="creation__arrowDown"
+          />
+        </div>
+        <div class="creation__change creation__change--visible">
+          <p>Homme :</p>
+          <div class="creation__custom">
+            <img
+              src="../assets/manfit.png"
+              alt="perfecto man fit"
+              class="creation__clothes"
+            />
+            <img
+              src="../assets/manlarge.png"
+              alt="perfecto man fit"
+              class="creation__clothes"
+            />
+          </div>
+          <p>Femme :</p>
+          <div class="creation__custom">
+            <img
+              src="../assets/perfecto-step1.png"
+              alt="perfecto man fit"
+              class="creation__clothes"
+              id="step1"
+            />
+            <img
+              src="../assets/womanlarge.png"
+              alt="perfecto man fit"
+              class="creation__clothes"
+            />
+          </div>
+        </div>
+        <div class="creation__choice">
+          <h3 class="creation__title">Couleurs</h3>
+          <img
+            src="../assets/arrow-down-s-line.png"
+            alt="arrow down"
+            class="creation__arrowDown"
+          />
+        </div>
+        <div class="creation__change ">
+          <p>Buste :</p>
+          <div class="creation__custom">
+            <div class="creation__color"></div>
+            <div class="creation__color"></div>
+            <div class="creation__color"></div>
+            <div class="creation__color" id="step2"></div>
+            <div class="creation__color"></div>
+            <div class="creation__color"></div>
+          </div>
+          <p>Manches :</p>
+          <div class="creation__custom">
+            <div class="creation__color"></div>
+            <div class="creation__color"></div>
+            <div class="creation__color"></div>
+            <div class="creation__color"></div>
+            <div class="creation__color" id="step3"></div>
+            <div class="creation__color"></div>
+          </div>
+        </div>
+        <div class="creation__choice">
+          <h3 class="creation__title">Poches</h3>
+          <img
+            src="../assets/arrow-down-s-line.png"
+            alt="arrow down"
+            class="creation__arrowDown"
+          />
+        </div>
+        <div class="creation__change ">
+          <p>Nombre de poches :</p>
+          <div class="creation__custom">
+            <img
+              src="../assets/poche2.png"
+              alt="poche 2"
+              class="creation__pocket"
+              id="step4"
+            />
+            <img
+              src="../assets/poche3.png"
+              alt="poche 3"
+              class="creation__pocket"
+              id="step5"
+            />
+            <img
+              src="../assets/poche4.png"
+              alt="poche 4"
+              class="creation__pocket"
+              id="step6"
+            />
+            <img
+              src="../assets/poche5.png"
+              alt="poche 5"
+              class="creation__pocket"
+              id="step7"
+            />
+          </div>
+        </div>
+        <div class="creation__choice" id="step8">
+          <h3 class="creation__title">Artiste</h3>
+          <img
+            src="../assets/arrow-down-s-line.png"
+            alt="arrow down"
+            class="creation__arrowDown"
+            id="step8"
+          />
+        </div>
+        <div class="creation__change ">
+          <p>Illustrations :</p>
+          <div class="creation__custom creation__custom--modifier">
+            <img
+              src="../assets/tableau-skull.png"
+              alt="artist painting"
+              class="creation__painting"
+              id="step9"
+            />
+            <img
+              src="../assets/painting-rino.jpg"
+              alt="artist painting"
+              class="creation__painting"
+            />
+            <img
+              src="../assets/painting-yoga.jpg"
+              alt="artist painting"
+              class="creation__painting"
+            />
+          </div>
+        </div>
+        <div class="creation__choice">
+          <h3 class="creation__title">Signature</h3>
+          <img
+            src="../assets/arrow-down-s-line.png"
+            alt="arrow down"
+            class="creation__arrowDown"
+          />
+        </div>
+        <div class="creation__change"></div>
+        <div class="creation__choice">
+          <h3 class="creation__title">Récapitulatif</h3>
+          <img
+            src="../assets/arrow-down-s-line.png"
+            alt="arrow down"
+            class="creation__arrowDown"
+          />
+        </div>
+        <div class="creation__change"></div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript" src="../js/custom.js"></script>
+</html>
