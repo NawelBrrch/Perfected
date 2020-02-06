@@ -21,6 +21,10 @@ header {
     height: 10vh;
     width: 100vw;
     box-shadow: 0px 3px 10px #1c1c1c;
+
+    &.disappear {
+      display: none;
+    }
   }
 
   .element__mobile {
