@@ -36,12 +36,15 @@
         .cards__description,
         .cards__button {
           opacity: 1;
-          text-shadow: 0 0 5px #000000;
+          text-shadow: 0 0 3px #000000;
           color: white;
         }
 
         .cards__img {
           transform: scale(1.05);
+        }
+        #effect {
+          filter: contrast(60%);
         }
       }
     }
