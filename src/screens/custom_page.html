@@ -9,7 +9,53 @@
   </head>
   <body>
     <!-- <header></header> -->
-    <div class="headertest"></div>
+    <header>
+      <section class='navbar'>
+        <div class='navbar__desktop'>
+          <div class='elements navbar__element'>
+            <div class='logo'>
+              <div class='logo__grpahism'>
+                <img class='logo__navbar' src='../assets/logo.png'>
+              </div>
+              <div class='logo__name'>
+                Perfected
+              </div>
+            </div>
+            <div class='navbar__txt'>
+              <div class='navbar__menu navbar__element--text' id="navperso"><a href="#">personnalisation</a></div>
+              <div class='navbar__menu navbar__element--text'><a href="#">nos tissus</a></div>
+              <div class='navbar__menu navbar__element--text'><a href="#">notre artiste</a></div>
+              <div class='navbar__menu navbar__element--text'><a href="#">nos valeurs</a></div>
+            </div>
+            <div class='navbar__logo--shopping'>
+              <img src='../assets/shopping-bag.svg' class='shopping__bag--logo'>
+            </div>
+        </div>
+      </div>
+      <div class='navbar__mobile'>
+        <div class='element__mobile'>
+          <p class='navbar__mobile--text'>Perso</p>
+          <a href=""><img src='../assets/perso.svg'></a>
+        </div>
+        <div class='element__mobile'>
+          <p class='navbar__mobile--text'>Artiste</p>
+          <a href="#">
+          <img src='../assets/artist.svg'></a>
+        </div>
+        <div class='element__mobile'>
+          <p class='navbar__mobile--text'>Tissus</p>
+          <a href="#"><img src='../assets/tissus.svg'></a>
+        </div>
+        <div class='element__mobile'>
+          <p class='navbar__mobile--text'>Valeurs</p>
+          <a href="#"><img src='../assets/valeurs.svg'></a>
+        </div>
+        <div class='element__mobile'>
+          <p class='navbar__mobile--text'>Panier</p>
+          <a href="#"><img src='../assets/shopping-bag.svg' class='shopping__bag--mobile'></a>
+        </div>
+      </div>
+    </header>
     <section class="creation">
       <div class="creation__content">
         <div class="creation__imgs">
@@ -65,13 +111,13 @@
           />
         </div>
         <div class="creation__buttons">
-          <div class="creation__step creation__step--visible" id="prev">
+          <div class="creation__step creation__step--visible cta" id="prev">
             Précédent
           </div>
-          <div class="creation__step creation__step--visible" id="next">
+          <div class="creation__step creation__step--visible cta" id="next">
             Suivant
           </div>
-          <div class="creation__step" id="validate">
+          <div class="creation__step cta" id="validate">
             Valider
           </div>
         </div>
@@ -86,7 +132,7 @@
           />
         </div>
         <div class="creation__change creation__change--visible">
-          <p>Homme :</p>
+          <p class="creation__paragraph">Homme :</p>
           <div class="creation__custom">
             <img
               src="../assets/manfit.png"
@@ -99,7 +145,7 @@
               class="creation__clothes"
             />
           </div>
-          <p>Femme :</p>
+          <p class="creation__paragraph">Femme :</p>
           <div class="creation__custom">
             <img
               src="../assets/perfecto-step1.png"
@@ -123,7 +169,7 @@
           />
         </div>
         <div class="creation__change ">
-          <p>Buste :</p>
+          <p class="creation__paragraph">Buste :</p>
           <div class="creation__custom">
             <div class="creation__color"></div>
             <div class="creation__color"></div>
@@ -132,7 +178,7 @@
             <div class="creation__color"></div>
             <div class="creation__color"></div>
           </div>
-          <p>Manches :</p>
+          <p class="creation__paragraph">Manches :</p>
           <div class="creation__custom">
             <div class="creation__color"></div>
             <div class="creation__color"></div>
@@ -151,7 +197,7 @@
           />
         </div>
         <div class="creation__change ">
-          <p>Nombre de poches :</p>
+          <p class="creation__paragraph">Nombre de poches :</p>
           <div class="creation__custom">
             <img
               src="../assets/poche2.png"
@@ -189,7 +235,7 @@
           />
         </div>
         <div class="creation__change ">
-          <p>Illustrations :</p>
+          <p class="creation__paragraph">Illustrations :</p>
           <div class="creation__custom creation__custom--modifier">
             <img
               src="../assets/tableau-skull.png"
@@ -217,7 +263,24 @@
             class="creation__arrowDown"
           />
         </div>
-        <div class="creation__change"></div>
+        <div class="creation__change">
+          <p class="creation__paragraph">Nom et prénoms :</p>
+          <div class="creation__custom">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="3"
+              maxlength="15"
+              size="15"
+              class="creation__input"
+            />
+            <div class="creation__okbtn cta" id="unique">
+              Valider
+            </div>
+          </div>
+        </div>
         <div class="creation__choice">
           <h3 class="creation__title">Récapitulatif</h3>
           <img
