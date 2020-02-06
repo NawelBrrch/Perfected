@@ -16,7 +16,7 @@
   }
 
   @include desktop {
-    height: 50vh;
+    height: 80vh;
   }
 }
 
@@ -31,7 +31,6 @@
   padding: 6vh 3vw 4vh 3vw;
 
   @include medium-fabrics {
-    border: solid 2px rgb(255, 0, 234);
     width: 100vw;
     height: 60vh;
     margin: 0;
@@ -43,6 +42,11 @@
     height: 60vh;
   }
 
+  @include desktop {
+    height: 80vh;
+    margin: 0;
+  }
+
   h2 {
     position: absolute;
     top: 4vh;
@@ -52,6 +56,10 @@
       padding-bottom: 4vh;
       padding-right: 1.5vw;
     }
+
+    @include desktop {
+      top: 10vh;
+
     @include medium {
       top: 7vh;
       padding-bottom: 4vh;
@@ -63,10 +71,12 @@
     padding-bottom: 2vh;
     position: absolute;
     top: 15vh;
+
     @include medium-fabrics {
       top: 17vh;
     }
-
+    @include desktop {
+      top: 22vh;
     @include medium {
       top: 19vh;
     }
@@ -81,6 +91,8 @@
       padding-right: 1.5vw;
     }
 
+    @include desktop {
+      top: 35vh;
     @include medium {
       top: 29vh;
       padding-right: 1.5vw;
@@ -100,7 +112,7 @@
 
 .fabrics__container {
   margin: 5vw;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,10 +131,9 @@
     height: 60vh;
   }
 
-  @mixin desktop {
-    width: 100%;
-    height: 100vh;
-    background-color: #dbdbdb;
+  @include desktop {
+    height: 80vh;
+    margin: 0;
   }
 }
 
@@ -161,7 +172,7 @@
     }
 
     @include desktop {
-      top: 16vh;
+      top: 27vh;
       left: 10vw;
       padding-bottom: 2vh;
     }
@@ -185,7 +196,7 @@
     }
 
     @include desktop {
-      top: 21vh;
+      top: 34vh;
       left: 10vw;
       padding-bottom: 2vh;
     }
@@ -208,7 +219,7 @@
     }
 
     @include desktop {
-      top: 26vh;
+      top: 40vh;
       left: 10vw;
       padding-bottom: 2vh;
     }
@@ -265,7 +276,7 @@
   }
 
   @include desktop {
-    top: 9vh;
+    top: 20vh;
     left: 10vw;
   }
 }
@@ -283,7 +294,7 @@
   }
 
   @include desktop {
-    top: 14vh;
+    top: 27vh;
     left: 10vw;
   }
 }
@@ -301,7 +312,7 @@
   }
 
   @include desktop {
-    top: 19vh;
+    top: 33vh;
     left: 10vw;
   }
 }
@@ -320,7 +331,7 @@
   }
 
   @include desktop {
-    top: 22vh;
+    top: 37vh;
     left: 10vw;
   }
 }
