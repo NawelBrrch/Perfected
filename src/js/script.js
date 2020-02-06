@@ -49,3 +49,17 @@ elPrev.addEventListener("click", function() {
   jump(index - 1);
   console.log(index);
 });
+
+//BUTTON ANIMATION
+
+let bbb = {};
+let btn6 = document.getElementById("btn");
+let btnspan = document.getElementById("btn__span");
+
+btn6.addEventListener("mouseover", function(e) {
+  bbb.x = e.clientX - btn6.offsetLeft;
+  bbb.y = e.clientY - btn6.offsetTop + window.scrollY;
+  btnspan.style.top = bbb.y + "px";
+  btnspan.style.left = bbb.x + "px";
+  console.log(bbb.y);
+});
