@@ -1,4 +1,7 @@
 @keyframes appear {
+  30% {
+    opacity: 0.2;
+  }
   50% {
     opacity: 0.5;
   }
@@ -15,8 +18,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  opacity: 0;
+
   //padding: 3vh 0 2vh 0;
   border: solid 2px rgb(0, 4, 255);
+
+  &.is-appear {
+    animation: appear 0.5s forwards;
+  }
 
   @include medium-fabrics {
     flex-direction: row;
@@ -38,11 +47,6 @@
   line-height: 150%;
   height: 60vh;
   padding: 6vh 3vw 4vh 3vw;
-  opacity: 0;
-
-  &.disapear {
-    animation: appear 0.3s forwards;
-  }
 
   @include medium-fabrics {
     border: solid 2px rgb(255, 0, 234);
