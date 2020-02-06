@@ -63,7 +63,7 @@
       width: 70%;
       height: 70vh;
       justify-content: space-around;
-      margin-top: 8%;
+      margin-top: 3%;
     }
 
     @include desktop {
@@ -107,10 +107,14 @@
     @media (min-width: 960px) {
       display: flex;
       align-items: center;
-      margin: 2% 0 2% 0;
+      margin: 4% 0 3% 0;
       flex-direction: column;
       height: 5%;
       justify-content: space-between;
+
+      img {
+        margin-top: 10px;
+      }
 
       a {
         text-decoration: none;
