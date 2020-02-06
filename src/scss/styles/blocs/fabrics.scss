@@ -12,8 +12,7 @@
   @include medium-fabrics {
     flex-direction: row;
     overflow: hidden;
-    padding: 0;
-    height: 50vh;
+    height: 60vh;
   }
 
   @include desktop {
@@ -46,11 +45,12 @@
 
   h2 {
     position: absolute;
-    top: 6vh;
+    top: 4vh;
 
     @include medium-fabrics {
-      padding-top: 3vh;
+      top: 6vh;
       padding-bottom: 4vh;
+      padding-right: 1.5vw;
     }
   }
 
@@ -58,11 +58,19 @@
     padding-bottom: 2vh;
     position: absolute;
     top: 15vh;
+    @include medium-fabrics {
+      top: 17vh;
+    }
   }
 
   p {
     position: absolute;
     top: 22vh;
+
+    @include medium-fabrics {
+      top: 26vh;
+      padding-right: 1.5vw;
+    }
   }
 }
 
@@ -88,7 +96,7 @@
 
   @include medium-fabrics {
     margin: 0;
-    height: 50vh;
+    height: 60vh;
     background-color: #dbdbdb;
     justify-content: flex-start;
   }
@@ -127,7 +135,7 @@
     left: 13vw;
 
     @include medium-fabrics {
-      top: 12vh;
+      top: 18.5vh;
       left: 2vw;
       padding-bottom: 2vh;
     }
@@ -151,7 +159,7 @@
     top: 14vh;
     left: 13vw;
     @include medium-fabrics {
-      top: 17vh;
+      top: 23vh;
       left: 2vw;
       padding-bottom: 2vh;
     }
@@ -175,7 +183,7 @@
     top: 19.5vh;
     left: 13vw;
     @include medium-fabrics {
-      top: 22vh;
+      top: 28vh;
       left: 2vw;
       padding-bottom: 2vh;
     }
@@ -238,7 +246,7 @@
   left: 15.5vw;
 
   @include medium-fabrics {
-    top: 7vh;
+    top: 14vh;
     left: 2vw;
   }
 
@@ -256,7 +264,7 @@
   left: 15.5vw;
 
   @include medium-fabrics {
-    top: 12vh;
+    top: 19vh;
     left: 2vw;
   }
 
@@ -274,7 +282,7 @@
   left: 15.5vw;
 
   @include medium-fabrics {
-    top: 17vh;
+    top: 24vh;
     left: 2vw;
   }
 
@@ -293,7 +301,7 @@
   padding: 1vh;
 
   @include medium-fabrics {
-    top: 20vh;
+    top: 27vh;
     left: 2vw;
   }
 
