@@ -12,9 +12,13 @@
 
   @include medium {
     background: url("../../assets/perf-danaerys.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right -300px bottom;
+  }
+
+  @media (min-width: 900px) {
+    background-size: contain;
   }
 
   @include desktop {
@@ -85,18 +89,6 @@
         width: 80%;
       }
     }
-
-    button {
-      width: 100%;
-      padding: 15px 0;
-      background-color: #f3f3f3;
-      color: $primary-color-black;
-
-      @include medium {
-        background-color: transparent;
-        width: 50%;
-      }
-    }
   }
   .hero__scroll-indication {
     display: none;
@@ -122,7 +114,7 @@
   font-family: $title-card;
   color: $brand-background-color;
   transform: rotate(-90deg);
-  z-index: -1;
+  z-index: -2;
   position: absolute;
   left: -400px;
   top: 200px;
