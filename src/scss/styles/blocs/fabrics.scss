@@ -31,7 +31,7 @@
   }
 
   @include desktop {
-    height: 50vh;
+    height: 70vh;
   }
 }
 
@@ -69,6 +69,10 @@
       top: 7vh;
       padding-bottom: 4vh;
       padding-right: 1.5vw;
+    }
+
+    @include desktop {
+      top: 8vh;
     }
   }
 
@@ -131,9 +135,9 @@
     height: 60vh;
   }
 
-  @mixin desktop {
+  @include desktop {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-color: #dbdbdb;
   }
 }
@@ -173,7 +177,7 @@
     }
 
     @include desktop {
-      top: 16vh;
+      top: 25vh;
       left: 10vw;
       padding-bottom: 2vh;
     }
@@ -197,7 +201,7 @@
     }
 
     @include desktop {
-      top: 21vh;
+      top: 32vh;
       left: 10vw;
       padding-bottom: 2vh;
     }
@@ -220,7 +224,7 @@
     }
 
     @include desktop {
-      top: 26vh;
+      top: 38vh;
       left: 10vw;
       padding-bottom: 2vh;
     }
@@ -255,8 +259,8 @@
     }
 
     @include desktop {
-      width: 27px;
-      height: 27px;
+      width: 25px;
+      height: 25px;
       border: 0.1vw solid #2f2f2f;
     }
   }
@@ -271,12 +275,12 @@
   left: 15.5vw;
 
   @include medium-fabrics {
-    top: 14vh;
+    top: 12vh;
     left: 2vw;
   }
 
   @include desktop {
-    top: 9vh;
+    top: 17vh;
     left: 10vw;
   }
 }
@@ -293,7 +297,7 @@
   }
 
   @include desktop {
-    top: 14vh;
+    top: 24vh;
     left: 10vw;
   }
 }
@@ -310,7 +314,7 @@
   }
 
   @include desktop {
-    top: 19vh;
+    top: 30vh;
     left: 10vw;
   }
 }
@@ -328,7 +332,7 @@
   }
 
   @include desktop {
-    top: 22vh;
+    top: 33vh;
     left: 10vw;
   }
 }
