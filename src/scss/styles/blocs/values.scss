@@ -26,7 +26,7 @@
 
   h3 {
     @include medium {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -58,19 +58,19 @@
 
       &:hover {
         position: relative;
-        filter: none;
+        animation: valueFilter 0.2s forwards;
 
         .knowMore {
-          opacity: 0;
+          animation: valueOpacity 0.4s forwards;
         }
 
         .values__description {
-          opacity: 1;
           text-shadow: 0 0 5px #000000;
+          animation: valueOpacity 0.2s forwards reverse;
         }
 
         h3 {
-          opacity: 0;
+          animation: valueOpacity 0.2s forwards;
         }
       }
     }
@@ -129,7 +129,6 @@
 
     @include medium {
       color: $background-color;
-      font-size: 24px;
       text-shadow: 0 0 5px #000000;
       align-self: center;
     }
@@ -141,8 +140,7 @@
 
     @include medium {
       align-self: center;
-      //   text-align: center;
-      font-size: 1.5em;
+      font-size: 1.1em;
       color: $background-color;
       z-index: 0;
       opacity: 0;
