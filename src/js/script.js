@@ -43,11 +43,9 @@ let jump = function(to) {
 
 elNext.addEventListener("click", function() {
   jump(index + 1);
-  console.log(index);
 });
 elPrev.addEventListener("click", function() {
   jump(index - 1);
-  console.log(index);
 });
 
 //BUTTON ANIMATION
@@ -56,26 +54,11 @@ let spanCoords = {};
 let buttons = document.querySelectorAll(".cta");
 let spans = document.querySelectorAll(".btn__span");
 
-buttons[0].addEventListener("mouseover", function(e) {
-  spanCoords.x = e.clientX - buttons[0].offsetLeft;
-  spanCoords.y = e.clientY - buttons[0].offsetTop + window.scrollY;
-  spans[0].style.left = spanCoords.x + "px";
-  spans[0].style.top = "calc(" + spanCoords.y + "px" + "- 10vh)";
-  console.log(e.clientY);
-  console.log(buttons[0].offsetTop);
-});
-
-for (let i = 1; i < buttons.length; i++) {
+for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("mouseover", function(e) {
     spanCoords.x = e.clientX - buttons[i].offsetLeft;
     spanCoords.y = e.clientY - buttons[i].offsetTop + window.scrollY;
     spans[i].style.left = spanCoords.x + "px";
     spans[i].style.top = spanCoords.y + "px";
-    console.log(e.clientY);
-    console.log(buttons[i].offsetTop);
   });
 }
-//ARROW SCROLL
-
-let arrow = document.querySelector(".hero__arrow--scroll");
-console.log("hello", arrow);
