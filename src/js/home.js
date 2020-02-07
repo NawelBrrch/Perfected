@@ -1,7 +1,7 @@
 let section = document.getElementById("fabrics");
 let appear = document.getElementById("artist");
 let navBar = document.querySelector(".navbar__mobile");
-let footer = document.querySelector(".background__footer");
+let footer = document.querySelector(".footer");
 
 function revealImagesInViewport() {
   var scrollPosition = window.innerHeight + window.scrollY;
