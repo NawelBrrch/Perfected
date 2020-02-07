@@ -80,7 +80,6 @@
       justify-content: space-evenly;
       flex-direction: column;
       margin-top: -1px;
-      border: 1px solid blue;
     }
   }
 
@@ -169,13 +168,14 @@
     width: 100%;
     display: grid;
     grid-template-columns: 100px auto;
-    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr 1fr;
     grid-template-areas:
       "title1 recap1"
       "title2 recap2"
       "title3 recap3"
       "title4 recap4"
-      "title5 recap5";
+      "title5 recap5"
+      "title6 recap6";
   }
 
   &__backimg {
@@ -212,6 +212,13 @@
     }
     &:nth-child(9) {
       grid-area: recap5;
+      margin: 0;
+    }
+    &:nth-child(11) {
+      grid-area: title6;
+    }
+    &:nth-child(12) {
+      grid-area: recap6;
       margin: 0;
     }
   }
