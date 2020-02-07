@@ -21,7 +21,6 @@ let steps = [step1, step2, step3, step4, step5, step6, step7, step8, step9];
 prev.addEventListener("click", function() {
   jump(index - 1);
   verify();
-  console.log("hehe");
 });
 next.addEventListener("click", function() {
   jump(index + 1);
@@ -46,7 +45,6 @@ for (let i = 0; i < clickers.length; i++) {
       removeClassBefore();
       illustrationList[7].classList.add("creation__img--visible");
       illustrationList[9].classList.add("creation__img--visible");
-      console.log("test");
     }
   });
 }
@@ -83,7 +81,6 @@ function addEvents(index) {
   steps[index].addEventListener("click", function() {
     removeClassBefore();
     addClassNext(index + 1);
-    console.log(index);
   });
 }
 

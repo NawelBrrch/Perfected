@@ -9,7 +9,6 @@ function revealImagesInViewport() {
   window.requestAnimationFrame(function() {
     if (scrollPosition > section.offsetTop + 500) {
       section.classList.add("is-appear");
-      console.log("here");
     }
   });
 }
@@ -20,7 +19,6 @@ function reveal() {
   window.requestAnimationFrame(function() {
     if (scrollPosition > section.offsetTop + 1200) {
       appear.classList.add("here");
-      console.log("appear");
     }
   });
 }
@@ -39,7 +37,6 @@ window.onscroll = function() {
   totalHeight = window.scrollY + window.innerHeight;
 
   if (totalHeight >= scrollHeight - footer.offsetHeight) {
-    console.log("at the bottom");
     navBar.classList.add("disappear");
   } else {
     navBar.classList.remove("disappear");

@@ -1,4 +1,6 @@
 footer {
+  padding: 0 10px 0 10px;
+
   .footer {
     width: 100%;
     background-color: #f8f8f8;
@@ -74,8 +76,9 @@ footer {
   .credits {
     font-family: $p-font;
     color: $primary-color-black;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
     font-size: 0.6rem;
+    margin-top: 2vh;
 
     @include medium {
       font-size: 0.9rem;
