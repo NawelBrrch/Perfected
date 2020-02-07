@@ -7,7 +7,7 @@ function revealImagesInViewport() {
   var scrollPosition = window.innerHeight + window.scrollY;
 
   window.requestAnimationFrame(function() {
-    if (scrollPosition > section.offsetTop + 200) {
+    if (scrollPosition > section.offsetTop + 500) {
       section.classList.add("is-appear");
       console.log("here");
     }
