@@ -1,13 +1,22 @@
-# Perfected (Projet fin de semestre)
+# Perfected (School Project)
 
-# CEGLIE Thomas
+**Subject** : 
+*Create a unique clothing brand in an eco-responsible consumption approach, how to achieve hyper-personalization of our latest acquisitions?*
 
-# CHAMAYOU Mélina
+### The renderings: 
+* Landing page of your project.
+* Features: presentation of the product in every detail.
+* Customization path.
 
-# FERREIRA Raphael
 
-# RAK-LECLER Guillaume
+### CEGLIE Thomas
 
-# BERRICHI Nawel
+### CHAMAYOU Mélina
 
-# https://perfected.netlify.com/
+### FERREIRA Raphael
+
+### RAK-LECLER Guillaume
+
+#### BERRICHI Nawel
+
+ https://perfected.netlify.com/
