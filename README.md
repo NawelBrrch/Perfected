@@ -11,12 +11,12 @@
 
 ### CEGLIE Thomas
 
-### CHAMAYOU Mélina
+### CHAMAYOU Melina
 
 ### FERREIRA Raphael
 
 ### RAK-LECLER Guillaume
 
-#### BERRICHI Nawel
+### BERRICHI Nawel
 
  https://perfected.netlify.com/
